@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: another-deployment
+spec:
+  selector:
+    matchLabels:
+      app: another
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: another
+    spec:
+      containers:
+      - name: another
+        image: chirag1212/nginx-webpage:orange
+        ports:
+        - containerPort: 80
