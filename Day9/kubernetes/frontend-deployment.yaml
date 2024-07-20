@@ -15,5 +15,12 @@ spec:
       containers:
       - name: frontend
         image: chirag1212/nginx-webpage:apple
+        resources:
+          limits:
+            cpu: "50m"
+            memory: "100Mi"
+          requests:
+            cpu: "2m"
+            memory: "5Mi"     
         ports:
         - containerPort: 80
