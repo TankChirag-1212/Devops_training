@@ -1,0 +1,496 @@
+Validation of Required Commands:
+Command 'top' is Ready!...
+Command 'mpstat' is Ready!...
+Command 'ping' is Ready!...
+Command 'df' is Ready!...
+Command 'free' is Ready!...
+Command 'netstat' is Ready!...
+Command 'grep' is Ready!...
+Command 'awk' is Ready!...
+Command 'mail' is Ready!...
+-------------------------------------------------------------------------------
+Collecting System Metrics:
+CPU Usage:
+Linux 5.15.0-113-generic (PUNELPT0436) 	22/07/24 	_x86_64_	(8 CPU)
+
+11:53:10 PM IST  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+11:53:11 PM IST  all    1.51    0.00    1.51    0.00    0.00    0.00    0.00    0.00    0.00   96.99
+Average:     all    1.51    0.00    1.51    0.00    0.00    0.00    0.00    0.00    0.00   96.99
+Memory Utilization:
+              total        used        free      shared  buff/cache   available
+Mem:          15802        7437        1121         622        7242        7408
+Swap:          2047           1        2046
+Disk Space:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            7.7G     0  7.7G   0% /dev
+tmpfs           1.6G  2.3M  1.6G   1% /run
+/dev/nvme0n1p3  461G   90G  348G  21% /
+tmpfs           7.8G   82M  7.7G   2% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           7.8G     0  7.8G   0% /sys/fs/cgroup
+/dev/loop0      128K  128K     0 100% /snap/bare/5
+/dev/loop3      9.8M  9.8M     0 100% /snap/htop/4407
+/dev/loop1      164M  164M     0 100% /snap/chromium/2890
+/dev/loop2       13M   13M     0 100% /snap/kubectl/3302
+/dev/loop4       88M   88M     0 100% /snap/teams-for-linux/645
+/dev/loop12      13M   13M     0 100% /snap/snap-store/1113
+/dev/loop10      63M   63M     0 100% /snap/gtk-common-themes/1506
+/dev/loop6       67M   67M     0 100% /snap/cups/1052
+/dev/loop13     505M  505M     0 100% /snap/gnome-42-2204/172
+/dev/loop5       68M   68M     0 100% /snap/cups/1058
+/dev/loop8      105M  105M     0 100% /snap/core/17200
+/dev/loop7       75M   75M     0 100% /snap/core22/1122
+/dev/loop9       13M   13M     0 100% /snap/kubectl/3315
+/dev/loop11      84M   84M     0 100% /snap/outlook-for-linux/18
+/dev/loop18     9.8M  9.8M     0 100% /snap/htop/4317
+/dev/loop16      75M   75M     0 100% /snap/core22/1380
+/dev/loop14     506M  506M     0 100% /snap/gnome-42-2204/176
+/dev/loop17      50M   50M     0 100% /snap/snap-store/433
+/dev/loop15      92M   92M     0 100% /snap/gtk-common-themes/1535
+/dev/loop24     164M  164M     0 100% /snap/chromium/2897
+/dev/loop23     165M  165M     0 100% /snap/gnome-3-28-1804/198
+/dev/loop28     4.3M  4.3M     0 100% /snap/tree/18
+/dev/loop22      56M   56M     0 100% /snap/core18/2829
+/dev/loop25     219M  219M     0 100% /snap/gnome-3-34-1804/93
+/dev/loop21      56M   56M     0 100% /snap/core18/2823
+/dev/loop20     104M  104M     0 100% /snap/core/16928
+/dev/loop19      64M   64M     0 100% /snap/core20/2318
+/dev/loop27      88M   88M     0 100% /snap/teams-for-linux/649
+/dev/loop26     243M  243M     0 100% /snap/gnome-3-34-1804/27
+/dev/nvme0n1p1  239M  6.3M  232M   3% /boot/efi
+tmpfs           1.6G   60K  1.6G   1% /run/user/1001
+Network Statistics:
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      1806/cupsd          
+tcp        0      0 0.0.0.0:25              0.0.0.0:*               LISTEN      3760/master         
+tcp        0      0 127.0.0.1:33060         0.0.0.0:*               LISTEN      53287/mysqld        
+tcp        0      0 127.0.0.1:17473         0.0.0.0:*               LISTEN      40613/TaniumClient  
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      53287/mysqld        
+tcp        0      0 127.0.0.1:4769          0.0.0.0:*               LISTEN      4115/PanGPA         
+tcp        0      0 127.0.0.1:4767          0.0.0.0:*               LISTEN      1343/PanGPS         
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      1089/systemd-resolv 
+tcp6       0      0 ::1:631                 :::*                    LISTEN      1806/cupsd          
+tcp6       0      0 :::25                   :::*                    LISTEN      3760/master         
+tcp6       0      0 :::80                   :::*                    LISTEN      9786/apache2        
+tcp6       0      0 :::3000                 :::*                    LISTEN      3500/grafana        
+tcp6       0      0 :::8080                 :::*                    LISTEN      31668/java          
+udp        0      0 0.0.0.0:631             0.0.0.0:*                           1299/cups-browsed   
+udp        0      0 224.0.0.251:5353        0.0.0.0:*                           5518/chrome         
+udp        0      0 224.0.0.251:5353        0.0.0.0:*                           5137/teams-for-linu 
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           1189/avahi-daemon:  
+udp        0      0 0.0.0.0:55861           0.0.0.0:*                           1189/avahi-daemon:  
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           1089/systemd-resolv 
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           39116/dhclient      
+udp6       0      0 :::34950                :::*                                1189/avahi-daemon:  
+udp6       0      0 :::5353                 :::*                                1189/avahi-daemon:  
+Top Processes by CPU and Memory Usage:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+einfoch+   39936  7.2  1.6 1190515024 260480 ?   Sl   21:30  10:23 /usr/share/code/code --type=renderer --crashpad-handler-pid=39893 --enable-crash-reporter=ad937925-13dd-4ae7-a0f4-f8f470eee997,no_channel --user-data-dir=/home/einfochips/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --app-path=/usr/share/code/resources/app --enable-sandbox --enable-blink-features=HighlightAPI --disable-blink-features=FontMatchingCTMigration, --lang=en-GB --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1721633902803356 --launch-time-ticks=30123702623 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,6759324450486214760,17067896380528418902,262144 --enable-features=kWebSQLAccess --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version --vscode-window-config=vscode:5e78c272-6f1f-4da9-b4c2-8ae8baa02dc9
+einfoch+   40122  6.3  1.6 1186967560 269888 ?   Sl   21:31   9:00 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=5527 --enable-crash-reporter=510f750c-bbb5-4195-9f6b-9cda9698b55b, --change-stack-guard-on-fork=enable --lang=en-GB --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=306 --time-ticks-at-unix-epoch=-1721623188010279 --launch-time-ticks=30165016944 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,5114173227895154201,14694816083951501431,262144 --variations-seed-version=20240719-130109.258000
+einfoch+    5564  3.1  1.1 34230300 188096 ?     Sl   10:15  25:53 /opt/google/chrome/chrome --type=gpu-process --crashpad-handler-pid=5527 --enable-crash-reporter=510f750c-bbb5-4195-9f6b-9cda9698b55b, --change-stack-guard-on-fork=enable --gpu-preferences=WAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAEAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=3,i,5114173227895154201,14694816083951501431,262144 --variations-seed-version=20240719-130109.258000
+einfoch+    4278  2.9  2.0 4803432 325620 ?      Ssl  10:10  24:41 /usr/bin/gnome-shell
+einfoch+   39907  2.5  0.7 34126192 120392 ?     Sl   21:30   3:42 /usr/share/code/code --type=gpu-process --crashpad-handler-pid=39893 --enable-crash-reporter=ad937925-13dd-4ae7-a0f4-f8f470eee997,no_channel --user-data-dir=/home/einfochips/.config/Code --gpu-preferences=WAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=0,i,6759324450486214760,17067896380528418902,262144 --enable-features=kWebSQLAccess --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version
+einfoch+    5518  2.3  2.1 34331888 346080 ?     SLl  10:15  19:06 /opt/google/chrome/chrome
+einfoch+    4138  1.8  0.5 549924 92112 tty2     Sl+  10:10  15:08 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1001/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+jenkins    31668  1.4 22.9 10065160 3719140 ?    Ssl  17:13   5:55 /usr/bin/java -Djava.awt.headless=true -jar /usr/share/java/jenkins.war --webroot=/var/cache/jenkins/war --httpPort=8080
+einfoch+   39872  1.2  1.0 1186265280 174056 ?   Ssl  21:30   1:46 /usr/share/code/code .
+einfoch+   29020  1.1  1.1 1186928524 187752 ?   Sl   15:54   5:31 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=5527 --enable-crash-reporter=510f750c-bbb5-4195-9f6b-9cda9698b55b, --change-stack-guard-on-fork=enable --lang=en-GB --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=233 --time-ticks-at-unix-epoch=-1721623188010279 --launch-time-ticks=19052989553 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,5114173227895154201,14694816083951501431,262144 --variations-seed-version=20240719-130109.258000
+-------------------------------------------------------------------------------
+Log Analysis
+ERROR:
+Jul 22 10:09:59 PUNELPT0436 gnome-shell[2127]: Error looking up permission: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for geolocation
+Jul 22 10:09:59 PUNELPT0436 gsd-sharing[2871]: Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1
+Jul 22 10:09:59 PUNELPT0436 gsd-sharing[2871]: message repeated 3 times: [ Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1]
+Jul 22 10:10:00 PUNELPT0436 kernel: [   12.823226] cups-proxyd[2224]: segfault at 18 ip 00005578d097fd75 sp 00007fff164a1e60 error 4 in cups-proxyd[5578d097c000+7000]
+Jul 22 10:10:01 PUNELPT0436 gsd-sharing[2871]: Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1
+Jul 22 10:10:01 PUNELPT0436 gsd-sharing[2871]: message repeated 3 times: [ Failed to StopUnit service: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1]
+Jul 22 10:10:01 PUNELPT0436 org.gnome.Shell.desktop[3455]: Errors from xkbcomp are not fatal to the X server
+Jul 22 10:10:03 PUNELPT0436 grafana[3500]: logger=featuremgmt t=2024-07-22T10:10:03.402438048+05:30 level=info msg=FeatureToggles cloudWatchNewLabelParsing=true topnav=true alertingSimplifiedRouting=true logsInfiniteScrolling=true lokiMetricDataplane=true lokiQuerySplitting=true influxdbBackendMigration=true betterPageScrolling=true awsAsyncQueryCaching=true kubernetesPlaylists=true recordedQueriesMulti=true transformationsRedesign=true exploreContentOutline=true logsExploreTableVisualisation=true lokiStructuredMetadata=true correlations=true panelMonitoring=true dashgpt=true ssoSettingsApi=true prometheusConfigOverhaulAuth=true logRowsPopoverMenu=true alertingInsights=true cloudWatchCrossAccountQuerying=true angularDeprecationUI=true annotationPermissionUpdate=true exploreMetrics=true awsDatasourcesNewFormStyling=true dataplaneFrontendFallback=true alertingNoDataErrorExecution=true prometheusMetricEncyclopedia=true recoveryThreshold=true managedPluginsInstall=true lokiQueryHints=true logsContextDatasourceUi=true nestedFolders=true publicDashboards=true prometheusDataplane=true
+Jul 22 10:10:03 PUNELPT0436 grafana[3500]: logger=plugins.registration t=2024-07-22T10:10:03.705805073+05:30 level=error msg="Could not register plugin" pluginId=xychart error="plugin xychart is already registered"
+Jul 22 10:10:03 PUNELPT0436 grafana[3500]: logger=plugins.initialization t=2024-07-22T10:10:03.70586377+05:30 level=error msg="Could not initialize plugin" pluginId=xychart error="plugin xychart is already registered"
+Jul 22 10:10:03 PUNELPT0436 grafana[3500]: logger=ngalert.state.manager t=2024-07-22T10:10:03.760247026+05:30 level=info msg="Running in alternative execution of Error/NoData mode"
+Jul 22 10:10:03 PUNELPT0436 grafana[3500]: logger=grafana.update.checker t=2024-07-22T10:10:03.96846921+05:30 level=error msg="Update check failed" error="failed to get stable version from grafana.com: Get \"https://grafana.com/api/grafana/versions/stable\": tls: failed to verify certificate: x509: certificate is valid for captiveportal-login.aruba.arrow.com, not grafana.com" duration=186.695543ms
+Jul 22 10:10:05 PUNELPT0436 /usr/lib/gdm3/gdm-x-session[4138]: #011(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+Jul 22 10:10:06 PUNELPT0436 gnome-session-c[4257]: Error creating FIFO: File exists
+Jul 22 10:10:10 PUNELPT0436 gnome-shell[4278]: Error looking up permission: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for geolocation
+Jul 22 10:10:55 PUNELPT0436 teams-for-linux[4996]: Theme parsing error: gtk.css:1413:23: 'font-feature-settings' is not a valid property name
+Jul 22 10:10:55 PUNELPT0436 teams-for-linux[4996]: Theme parsing error: gtk.css:3286:25: 'font-feature-settings' is not a valid property name
+Jul 22 10:10:55 PUNELPT0436 teams-for-linux[4996]: Theme parsing error: gtk.css:3748:23: 'font-feature-settings' is not a valid property name
+Jul 22 10:11:00 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [4996:0722/101100.559223:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.login1.Manager.Inhibit: object_path= /org/freedesktop/login1: org.freedesktop.DBus.Error.AccessDenied: An AppArmor policy prevents this sender from sending this message to this recipient; type="method_call", sender=":1.115" (uid=1001 pid=4996 comm="/snap/teams-for-linux/649/teams-for-linux --no-san" label="snap.teams-for-linux.teams-for-linux (enforce)") interface="org.freedesktop.login1.Manager" member="Inhibit" error name="(unset)" requested_reply="0" destination="org.freedesktop.login1" (uid=0 pid=1237 comm="/lib/systemd/systemd-logind " label="unconfined")
+Jul 22 10:11:00 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 10:11:10 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [4996:0722/101110.074032:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.ScreenSaver.GetActive: object_path= /org/freedesktop/ScreenSaver: org.freedesktop.DBus.Error.NotSupported: This method is not implemented
+Jul 22 10:11:15 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR]
+Jul 22 10:15:05 PUNELPT0436 gnome-shell[5525]: [5518:5518:0722/101505.956887:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.ScreenSaver.GetActive: object_path= /org/freedesktop/ScreenSaver: org.freedesktop.DBus.Error.NotSupported: This method is not implemented
+Jul 22 10:17:19 PUNELPT0436 gnome-shell[5525]: [5518:5546:0722/101719.734788:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -118
+Jul 22 11:10:40 PUNELPT0436 gnome-shell[5525]: [5518:5518:0722/111040.547071:ERROR:interface_endpoint_client.cc(722)] Message 0 rejected by interface blink.mojom.WidgetHost
+Jul 22 11:16:57 PUNELPT0436 dockerd[3499]: time="2024-07-22T11:16:57.673807418+05:30" level=error msg="Failed to get event" error="rpc error: code = Unavailable desc = error reading from server: EOF" module=libcontainerd namespace=plugins.moby
+Jul 22 11:16:57 PUNELPT0436 dockerd[3499]: time="2024-07-22T11:16:57.673840124+05:30" level=error msg="Failed to get event" error="rpc error: code = Unavailable desc = error reading from server: EOF" module=libcontainerd namespace=moby
+Jul 22 11:16:57 PUNELPT0436 containerd[9667]: time="2024-07-22T11:16:57.733588650+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.blockfile\"..." error="no scratch file generator: skip plugin" type=io.containerd.snapshotter.v1
+Jul 22 11:16:57 PUNELPT0436 containerd[9667]: time="2024-07-22T11:16:57.733939053+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." error="path /var/lib/containerd/io.containerd.snapshotter.v1.btrfs (ext4) must be a btrfs filesystem to be used with the btrfs snapshotter: skip plugin" type=io.containerd.snapshotter.v1
+Jul 22 11:16:57 PUNELPT0436 containerd[9667]: time="2024-07-22T11:16:57.733982140+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." error="devmapper not configured: skip plugin" type=io.containerd.snapshotter.v1
+Jul 22 11:16:57 PUNELPT0436 containerd[9667]: time="2024-07-22T11:16:57.734409316+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.zfs\"..." error="path /var/lib/containerd/io.containerd.snapshotter.v1.zfs must be a zfs filesystem to be used with the zfs snapshotter: skip plugin" type=io.containerd.snapshotter.v1
+Jul 22 11:16:57 PUNELPT0436 containerd[9667]: time="2024-07-22T11:16:57.735919712+05:30" level=info msg="skip loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." error="skip plugin: tracing endpoint not configured" type=io.containerd.tracing.processor.v1
+Jul 22 11:16:57 PUNELPT0436 containerd[9667]: time="2024-07-22T11:16:57.735959316+05:30" level=info msg="skip loading plugin \"io.containerd.internal.v1.tracing\"..." error="skip plugin: tracing endpoint not configured" type=io.containerd.internal.v1
+Jul 22 11:18:32 PUNELPT0436 kernel: [ 4124.008655] i915 0000:00:02.0: [drm] *ERROR* Atomic update failure on pipe A (start=248116 end=248117) time 596 us, min 1073, max 1079, scanline start 1067, end 6
+Jul 22 11:57:38 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/115738.948916:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -100
+Jul 22 11:58:48 PUNELPT0436 gnome-shell[5525]: Fontconfig error: Cannot load default config file: No such file: (null)
+Jul 22 12:13:12 PUNELPT0436 gnome-shell[4278]: Received error from D-Bus search provider org.gnome.seahorse.Application.desktop during GetResultMetas: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.gnome.Shell.SearchProvider2” on object at path /org/gnome/seahorse/Application
+Jul 22 12:13:12 PUNELPT0436 gnome-shell[4278]: Failed to set the markup of the actor 'ClutterText': Error on line 1 char 20: “<b” is not a valid name
+Jul 22 12:15:10 PUNELPT0436 gnome-shell[5525]: [5564:5564:0722/121510.025345:ERROR:shared_image_manager.cc(223)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+Jul 22 12:16:07 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 12:19:12 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/121912.840624:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -100
+Jul 22 12:19:12 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/121912.869091:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -100
+Jul 22 12:19:21 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/121921.608741:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -100
+Jul 22 12:19:21 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/121921.637031:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -100
+Jul 22 12:19:31 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/121931.086773:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -100
+Jul 22 12:19:31 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/121931.130440:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -100
+Jul 22 12:25:42 PUNELPT0436 gnome-shell[5525]: [5518:5518:0722/122542.733210:ERROR:atom_cache.cc(229)] Add chromium/from-privileged to kAtomsToCache
+Jul 22 12:36:57 PUNELPT0436 outlook-for-lin[17859]: Theme parsing error: gtk.css:1413:23: 'font-feature-settings' is not a valid property name
+Jul 22 12:36:57 PUNELPT0436 outlook-for-lin[17859]: Theme parsing error: gtk.css:3286:25: 'font-feature-settings' is not a valid property name
+Jul 22 12:36:57 PUNELPT0436 outlook-for-lin[17859]: Theme parsing error: gtk.css:3748:23: 'font-feature-settings' is not a valid property name
+Jul 22 12:37:05 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[17859]: [17859:0722/123705.510691:ERROR:object_proxy.cc(577)] Failed to call method: org.freedesktop.login1.Manager.Inhibit: object_path= /org/freedesktop/login1: org.freedesktop.DBus.Error.AccessDenied: An AppArmor policy prevents this sender from sending this message to this recipient; type="method_call", sender=":1.172" (uid=1001 pid=17859 comm="/snap/outlook-for-linux/18/outlook-for-linux --no-" label="snap.outlook-for-linux.outlook-for-linux (enforce)") interface="org.freedesktop.login1.Manager" member="Inhibit" error name="(unset)" requested_reply="0" destination="org.freedesktop.login1" (uid=0 pid=1237 comm="/lib/systemd/systemd-logind " label="unconfined")
+Jul 22 12:37:05 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 12:37:07 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 13:20:48 PUNELPT0436 gnome-shell[5525]: [5564:5564:0722/132048.099581:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
+Jul 22 13:22:01 PUNELPT0436 gnome-shell[5525]: [5518:5546:0722/132201.507485:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22 13:22:01 PUNELPT0436 gnome-shell[5525]: [5518:5546:0722/132201.596093:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+Jul 22 13:22:35 PUNELPT0436 gnome-shell[5525]: [5518:5546:0722/132235.549685:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22 13:49:59 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 13:50:00 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/135000.754589:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 13:50:00 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/135000.803238:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 13:50:00 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/135000.814451:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 13:50:00 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/135000.816645:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 13:50:08 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/135008.767730:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 13:50:09 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/135009.557252:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 13:50:09 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 13:50:17 PUNELPT0436 outlook-for-lin[20871]: Theme parsing error: gtk.css:1413:23: 'font-feature-settings' is not a valid property name
+Jul 22 13:50:17 PUNELPT0436 outlook-for-lin[20871]: Theme parsing error: gtk.css:3286:25: 'font-feature-settings' is not a valid property name
+Jul 22 13:50:17 PUNELPT0436 outlook-for-lin[20871]: Theme parsing error: gtk.css:3748:23: 'font-feature-settings' is not a valid property name
+Jul 22 13:50:18 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[20871]: [20871:0722/135018.068723:ERROR:object_proxy.cc(577)] Failed to call method: org.freedesktop.login1.Manager.Inhibit: object_path= /org/freedesktop/login1: org.freedesktop.DBus.Error.AccessDenied: An AppArmor policy prevents this sender from sending this message to this recipient; type="method_call", sender=":1.190" (uid=1001 pid=20871 comm="/snap/outlook-for-linux/18/outlook-for-linux --no-" label="snap.outlook-for-linux.outlook-for-linux (enforce)") interface="org.freedesktop.login1.Manager" member="Inhibit" error name="(unset)" requested_reply="0" destination="org.freedesktop.login1" (uid=0 pid=1237 comm="/lib/systemd/systemd-logind " label="unconfined")
+Jul 22 13:50:18 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 13:50:28 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[20871]: [20871:0722/135028.506558:ERROR:object_proxy.cc(577)] Failed to call method: org.gnome.SessionManager.Inhibit: object_path= /org/gnome/SessionManager: org.freedesktop.DBus.Error.AccessDenied: An AppArmor policy prevents this sender from sending this message to this recipient; type="method_call", sender=":1.268" (uid=1001 pid=20871 comm="/snap/outlook-for-linux/18/outlook-for-linux --no-" label="snap.outlook-for-linux.outlook-for-linux (enforce)") interface="org.gnome.SessionManager" member="Inhibit" error name="(unset)" requested_reply="0" destination="org.gnome.SessionManager" (uid=1001 pid=4264 comm="/usr/libexec/gnome-session-binary --systemd-servic" label="unconfined")
+Jul 22 13:50:28 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[20871]: [20871:0722/135028.506591:ERROR:power_save_blocker_linux.cc(344)] No response to Inhibit() request!
+Jul 22 13:52:02 PUNELPT0436 gnome-shell[5525]: [5518:5546:0722/135202.707420:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -109
+Jul 22 13:52:17 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[21075]: Warning: vkCreateInstance failed with VK_ERROR_INCOMPATIBLE_DRIVER
+Jul 22 13:52:17 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[21075]:     at CheckVkSuccessImpl (../../third_party/dawn/src/dawn/native/vulkan/VulkanError.cpp:88)
+Jul 22 13:54:45 PUNELPT0436 teams-for-linux[21382]: Theme parsing error: gtk.css:1413:23: 'font-feature-settings' is not a valid property name
+Jul 22 13:54:45 PUNELPT0436 teams-for-linux[21382]: Theme parsing error: gtk.css:3286:25: 'font-feature-settings' is not a valid property name
+Jul 22 13:54:45 PUNELPT0436 teams-for-linux[21382]: Theme parsing error: gtk.css:3748:23: 'font-feature-settings' is not a valid property name
+Jul 22 13:55:38 PUNELPT0436 teams-for-linux[21501]: Theme parsing error: gtk.css:1413:23: 'font-feature-settings' is not a valid property name
+Jul 22 13:55:38 PUNELPT0436 teams-for-linux[21501]: Theme parsing error: gtk.css:3286:25: 'font-feature-settings' is not a valid property name
+Jul 22 13:55:38 PUNELPT0436 teams-for-linux[21501]: Theme parsing error: gtk.css:3748:23: 'font-feature-settings' is not a valid property name
+Jul 22 14:03:02 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[20871]: [20871:0722/140302.469923:ERROR:object_proxy.cc(577)] Failed to call method: org.gnome.SessionManager.Inhibit: object_path= /org/gnome/SessionManager: org.freedesktop.DBus.Error.AccessDenied: An AppArmor policy prevents this sender from sending this message to this recipient; type="method_call", sender=":1.277" (uid=1001 pid=20871 comm="/snap/outlook-for-linux/18/outlook-for-linux --no-" label="snap.outlook-for-linux.outlook-for-linux (enforce)") interface="org.gnome.SessionManager" member="Inhibit" error name="(unset)" requested_reply="0" destination="org.gnome.SessionManager" (uid=1001 pid=4264 comm="/usr/libexec/gnome-session-binary --systemd-servic" label="unconfined")
+Jul 22 14:03:02 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[20871]: [20871:0722/140302.470005:ERROR:power_save_blocker_linux.cc(344)] No response to Inhibit() request!
+Jul 22 14:19:47 PUNELPT0436 outlook-for-lin[22461]: Theme parsing error: gtk.css:1413:23: 'font-feature-settings' is not a valid property name
+Jul 22 14:19:47 PUNELPT0436 outlook-for-lin[22461]: Theme parsing error: gtk.css:3286:25: 'font-feature-settings' is not a valid property name
+Jul 22 14:19:47 PUNELPT0436 outlook-for-lin[22461]: Theme parsing error: gtk.css:3748:23: 'font-feature-settings' is not a valid property name
+Jul 22 14:27:50 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 14:27:55 PUNELPT0436 outlook-for-lin[23102]: Theme parsing error: gtk.css:1413:23: 'font-feature-settings' is not a valid property name
+Jul 22 14:27:55 PUNELPT0436 outlook-for-lin[23102]: Theme parsing error: gtk.css:3286:25: 'font-feature-settings' is not a valid property name
+Jul 22 14:27:55 PUNELPT0436 outlook-for-lin[23102]: Theme parsing error: gtk.css:3748:23: 'font-feature-settings' is not a valid property name
+Jul 22 14:27:55 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [23102:0722/142755.549572:ERROR:object_proxy.cc(577)] Failed to call method: org.freedesktop.login1.Manager.Inhibit: object_path= /org/freedesktop/login1: org.freedesktop.DBus.Error.AccessDenied: An AppArmor policy prevents this sender from sending this message to this recipient; type="method_call", sender=":1.208" (uid=1001 pid=23102 comm="/snap/outlook-for-linux/18/outlook-for-linux --no-" label="snap.outlook-for-linux.outlook-for-linux (enforce)") interface="org.freedesktop.login1.Manager" member="Inhibit" error name="(unset)" requested_reply="0" destination="org.freedesktop.login1" (uid=0 pid=1237 comm="/lib/systemd/systemd-logind " label="unconfined")
+Jul 22 14:27:55 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 14:29:55 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23308]: Warning: vkCreateInstance failed with VK_ERROR_INCOMPATIBLE_DRIVER
+Jul 22 14:29:55 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23308]:     at CheckVkSuccessImpl (../../third_party/dawn/src/dawn/native/vulkan/VulkanError.cpp:88)
+Jul 22 14:50:01 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [23102:0722/145001.281599:ERROR:object_proxy.cc(577)] Failed to call method: org.gnome.SessionManager.Inhibit: object_path= /org/gnome/SessionManager: org.freedesktop.DBus.Error.AccessDenied: An AppArmor policy prevents this sender from sending this message to this recipient; type="method_call", sender=":1.384" (uid=1001 pid=23102 comm="/snap/outlook-for-linux/18/outlook-for-linux --no-" label="snap.outlook-for-linux.outlook-for-linux (enforce)") interface="org.gnome.SessionManager" member="Inhibit" error name="(unset)" requested_reply="0" destination="org.gnome.SessionManager" (uid=1001 pid=4264 comm="/usr/libexec/gnome-session-binary --systemd-servic" label="unconfined")
+Jul 22 14:50:01 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [23102:0722/145001.281713:ERROR:power_save_blocker_linux.cc(344)] No response to Inhibit() request!
+Jul 22 15:11:58 PUNELPT0436 outlook-for-lin[26591]: Theme parsing error: gtk.css:1413:23: 'font-feature-settings' is not a valid property name
+Jul 22 15:11:58 PUNELPT0436 outlook-for-lin[26591]: Theme parsing error: gtk.css:3286:25: 'font-feature-settings' is not a valid property name
+Jul 22 15:11:58 PUNELPT0436 outlook-for-lin[26591]: Theme parsing error: gtk.css:3748:23: 'font-feature-settings' is not a valid property name
+Jul 22 15:12:03 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 15:15:26 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [23102:0722/151526.940862:ERROR:object_proxy.cc(577)] Failed to call method: org.gnome.SessionManager.Inhibit: object_path= /org/gnome/SessionManager: org.freedesktop.DBus.Error.AccessDenied: An AppArmor policy prevents this sender from sending this message to this recipient; type="method_call", sender=":1.416" (uid=1001 pid=23102 comm="/snap/outlook-for-linux/18/outlook-for-linux --no-" label="snap.outlook-for-linux.outlook-for-linux (enforce)") interface="org.gnome.SessionManager" member="Inhibit" error name="(unset)" requested_reply="0" destination="org.gnome.SessionManager" (uid=1001 pid=4264 comm="/usr/libexec/gnome-session-binary --systemd-servic" label="unconfined")
+Jul 22 15:15:26 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [23102:0722/151526.940914:ERROR:power_save_blocker_linux.cc(344)] No response to Inhibit() request!
+Jul 22 15:30:45 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 15:30:45 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 15:48:17 PUNELPT0436 gnome-shell[5525]: [5564:5564:0722/154817.947719:ERROR:shared_image_manager.cc(223)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+Jul 22 15:48:17 PUNELPT0436 gnome-shell[5525]: [5564:5564:0722/154817.948709:ERROR:shared_image_manager.cc(223)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+Jul 22 15:58:54 PUNELPT0436 gnome-shell[5525]: [5518:5518:0722/155854.659661:ERROR:atom_cache.cc(229)] Add WM_CHANGE_STATE to kAtomsToCache
+Jul 22 16:38:10 PUNELPT0436 teams-for-linux[30465]: Theme parsing error: gtk.css:1413:23: 'font-feature-settings' is not a valid property name
+Jul 22 16:38:10 PUNELPT0436 teams-for-linux[30465]: Theme parsing error: gtk.css:3286:25: 'font-feature-settings' is not a valid property name
+Jul 22 16:38:10 PUNELPT0436 teams-for-linux[30465]: Theme parsing error: gtk.css:3748:23: 'font-feature-settings' is not a valid property name
+Jul 22 17:08:02 PUNELPT0436 gnome-shell[5525]: [5518:5518:0722/170802.349834:ERROR:interface_endpoint_client.cc(722)] Message 5 rejected by interface blink.mojom.WidgetHost
+Jul 22 17:21:18 PUNELPT0436 gnome-shell[4278]: JS ERROR: TypeError: app is null#012_init@resource:///org/gnome/shell/ui/windowAttentionHandler.js:63:9#012_onWindowDemandsAttention@resource:///org/gnome/shell/ui/windowAttentionHandler.js:37:22
+Jul 22 17:21:18 PUNELPT0436 teams-for-linux[31997]: Theme parsing error: gtk.css:1413:23: 'font-feature-settings' is not a valid property name
+Jul 22 17:21:18 PUNELPT0436 teams-for-linux[31997]: Theme parsing error: gtk.css:3286:25: 'font-feature-settings' is not a valid property name
+Jul 22 17:21:18 PUNELPT0436 teams-for-linux[31997]: Theme parsing error: gtk.css:3748:23: 'font-feature-settings' is not a valid property name
+Jul 22 17:40:01 PUNELPT0436 gnome-shell[5525]: [5518:5518:0722/174001.367172:ERROR:interface_endpoint_client.cc(722)] Message 1 rejected by interface blink.mojom.WidgetHost
+Jul 22 17:40:01 PUNELPT0436 gnome-shell[5525]: [5518:5518:0722/174001.377839:ERROR:interface_endpoint_client.cc(722)] Message 1 rejected by interface blink.mojom.WidgetHost
+Jul 22 18:02:12 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 18:02:12 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 18:20:56 PUNELPT0436 gnome-shell[5525]: [5518:5546:0722/182056.458780:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22 18:33:03 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 18:33:03 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 18:33:03 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/183303.140589:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:03 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/183303.148642:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:04 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23310]: [23310:0722/183304.774951:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:04 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:06 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/183306.767784:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:06 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/183306.949482:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:09 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23310]: [23310:0722/183309.773814:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:09 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:09 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23310]: [23310:0722/183309.828068:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:09 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:12 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/183312.233283:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:12 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:12 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/183312.305095:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:12 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/183312.357565:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:12 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:12 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/183312.535395:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:12 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:12 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/183312.581522:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:12 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:13 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/183313.748934:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:13 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/183313.761302:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:13 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/183313.766524:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:13 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/183313.771501:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:14 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23310]: [23310:0722/183314.851516:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:14 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:14 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23310]: [23310:0722/183314.904913:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:14 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:15 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/183315.024753:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:15 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23310]: [23310:0722/183315.748488:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:15 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:15 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23310]: [23310:0722/183315.762211:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:15 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:17 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/183317.643895:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:17 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:17 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/183317.666290:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:17 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:19 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23310]: [23310:0722/183319.926139:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:19 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:19 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23310]: [23310:0722/183319.978462:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:19 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:24 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/183324.730972:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:24 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:33:24 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/183324.738858:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:24 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/183324.751945:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:24 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/183324.756400:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:24 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/183324.761279:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:25 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23310]: [23310:0722/183325.003790:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -200
+Jul 22 18:33:25 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23102]: [ERROR] An unexpected SSL error has occurred: net::ERR_CERT_COMMON_NAME_INVALID
+Jul 22 18:35:06 PUNELPT0436 gnome-shell[5525]: [5518:5546:0722/183506.091460:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -109
+Jul 22 19:09:15 PUNELPT0436 gnome-shell[5525]: [5518:5546:0722/190915.868199:ERROR:connection_factory_impl.cc(483)] ConnectionHandler failed with net error: -2
+Jul 22 21:28:41 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 21:28:41 PUNELPT0436 ubuntu-appindicators@ubuntu.com[4278]: Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow
+Jul 22 21:28:41 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212841.757475:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:41 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212841.773815:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:42 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212842.815766:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:42 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212842.841145:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:42 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23310]: [23310:0722/212842.855675:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:42 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23310]: [23310:0722/212842.870146:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:45 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212845.797479:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:45 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212845.805697:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:45 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212845.815692:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:45 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/212845.824461:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:45 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/212845.833574:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:45 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212845.898385:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:45 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212845.903050:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:45 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212845.910766:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:45 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/212845.914267:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:45 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/212845.915344:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:46 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/212846.006057:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:46 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/212846.021482:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:46 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/212846.295442:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:46 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/212846.339054:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:46 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/212846.439994:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:46 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/212846.459975:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:49 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23310]: [23310:0722/212849.830631:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:49 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23310]: [23310:0722/212849.849228:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:49 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212849.931605:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:49 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212849.948060:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:51 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/212851.882535:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:51 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/212851.896164:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:51 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212851.896195:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:51 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212851.911843:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:51 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/212851.915491:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:51 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212851.927999:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:51 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212851.928781:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:51 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212851.937031:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:51 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[5137]: [5137:0722/212851.939340:ERROR:ssl_client_socket_impl.cc(879)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:51 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212851.946513:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:51 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212851.949937:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:51 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212851.955680:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:54 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212854.365636:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:28:54 PUNELPT0436 gnome-shell[5525]: [5566:5571:0722/212854.390509:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -113
+Jul 22 21:29:04 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR]
+Jul 22 21:29:06 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR]
+Jul 22 21:30:04 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR]
+Jul 22 21:30:27 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR]
+Jul 22 21:30:29 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR]
+Jul 22 21:30:31 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR]
+Jul 22 21:30:38 PUNELPT0436 gnome-shell[5525]: [5518:5546:0722/213038.239804:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -109
+Jul 22 21:31:21 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR]
+Jul 22 21:31:24 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR]
+Jul 22 21:31:26 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR]
+Jul 22 21:31:28 PUNELPT0436 teams-for-linux_teams-for-linux.desktop[4996]: [ERROR]
+Jul 22 21:40:29 PUNELPT0436 gnome-terminal-server[58006]: [58016:58016:0100/000000.132306:ERROR:zygote_linux.cc(673)] write: Broken pipe (32)
+WARNING:
+Jul 22 10:09:57 PUNELPT0436 jenkins[1310]: 2024-07-22 04:39:57.802+0000 [id=1]#011WARNING#011o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+Jul 22 10:10:01 PUNELPT0436 org.gnome.Shell.desktop[3455]: > Warning:          Unsupported maximum keycode 569, clipping.
+Jul 22 10:10:03 PUNELPT0436 postfix/postfix-script[3703]: warning: symlink leaves directory: /etc/postfix/./makedefs.out
+Jul 22 10:10:04 PUNELPT0436 gnome-shell[2127]: Warning: Failed to start gsd-xsettings
+Jul 22 10:10:05 PUNELPT0436 gnome-shell[2127]: JS WARNING: [resource:///org/gnome/shell/ui/layout.js 24]: reference to undefined property "MetaWindowXwayland"
+Jul 22 10:10:05 PUNELPT0436 /usr/lib/gdm3/gdm-x-session[4138]: #011(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+Jul 22 10:10:12 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jul 22 10:10:12 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jul 22 10:10:12 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jul 22 10:10:12 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jul 22 10:10:12 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jul 22 10:10:12 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jul 22 10:10:12 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jul 22 10:10:12 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jul 22 10:10:12 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Jul 22 10:10:39 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jul 22 10:10:39 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jul 22 10:10:39 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jul 22 10:10:39 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jul 22 10:10:39 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jul 22 10:10:39 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jul 22 10:10:39 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jul 22 10:10:39 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jul 22 10:10:39 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Jul 22 10:15:05 PUNELPT0436 gnome-shell[5525]: MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0
+Jul 22 11:16:57 PUNELPT0436 containerd[9667]: time="2024-07-22T11:16:57+05:30" level=warning msg="containerd config version `1` has been deprecated and will be converted on each startup in containerd v2.0, use `containerd config migrate` after upgrading to containerd 2.0 to avoid conversion on startup"
+Jul 22 11:16:57 PUNELPT0436 containerd[9667]: time="2024-07-22T11:16:57.733543192+05:30" level=info msg="loading plugin \"io.containerd.warning.v1.deprecations\"..." type=io.containerd.warning.v1
+Jul 22 11:16:59 PUNELPT0436 apachectl[9779]: AH00112: Warning: DocumentRoot [/var/www/html/mystaticwebsite] does not exist
+Jul 22 11:16:59 PUNELPT0436 apachectl[9785]: AH00112: Warning: DocumentRoot [/var/www/html/mystaticwebsite] does not exist
+Jul 22 12:16:08 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jul 22 12:16:08 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jul 22 12:16:08 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jul 22 12:16:08 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jul 22 12:16:08 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jul 22 12:16:08 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jul 22 12:16:08 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jul 22 12:16:08 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jul 22 12:16:08 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Jul 22 13:50:00 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jul 22 13:50:00 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jul 22 13:50:00 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jul 22 13:50:00 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jul 22 13:50:00 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jul 22 13:50:00 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jul 22 13:50:00 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Jul 22 13:50:00 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jul 22 13:50:00 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jul 22 13:52:17 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[21075]: Warning: vkCreateInstance: Found no drivers!
+Jul 22 13:52:17 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[21075]: Warning: vkCreateInstance failed with VK_ERROR_INCOMPATIBLE_DRIVER
+Jul 22 14:29:55 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23308]: Warning: vkCreateInstance: Found no drivers!
+Jul 22 14:29:55 PUNELPT0436 outlook-for-linux_outlook-for-linux.desktop[23308]: Warning: vkCreateInstance failed with VK_ERROR_INCOMPATIBLE_DRIVER
+Jul 22 15:30:46 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jul 22 15:30:46 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jul 22 15:30:46 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jul 22 15:30:46 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jul 22 15:30:46 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jul 22 15:30:46 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jul 22 15:30:46 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Jul 22 15:30:46 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jul 22 15:30:46 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jul 22 16:59:45 PUNELPT0436 jenkins[1310]: 2024-07-22 11:29:45.370+0000 [id=477]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 26ef2c377ad6610c02f006fa0c5e98fc7c6ded023c5623dcfc4c4b3497287dbc. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 16:59:45 PUNELPT0436 jenkins[1310]: 2024-07-22 11:29:45.372+0000 [id=477]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /$stapler/bound/2116ea61-fa13-488c-9476-33db8eda4560/render by chirag1212. Returning 403.
+Jul 22 17:00:11 PUNELPT0436 jenkins[1310]: 2024-07-22 11:30:11.470+0000 [id=17]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 26ef2c377ad6610c02f006fa0c5e98fc7c6ded023c5623dcfc4c4b3497287dbc. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 17:00:11 PUNELPT0436 jenkins[1310]: 2024-07-22 11:30:11.471+0000 [id=17]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /$stapler/bound/91acb20f-c951-4da1-89e7-c267bb4d251a/render by chirag1212. Returning 403.
+Jul 22 17:00:12 PUNELPT0436 jenkins[1310]: 2024-07-22 11:30:12.945+0000 [id=1560]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 26ef2c377ad6610c02f006fa0c5e98fc7c6ded023c5623dcfc4c4b3497287dbc. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 17:00:12 PUNELPT0436 jenkins[1310]: 2024-07-22 11:30:12.946+0000 [id=1560]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /$stapler/bound/2116ea61-fa13-488c-9476-33db8eda4560/render by chirag1212. Returning 403.
+Jul 22 17:00:14 PUNELPT0436 jenkins[1310]: 2024-07-22 11:30:14.766+0000 [id=17]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 26ef2c377ad6610c02f006fa0c5e98fc7c6ded023c5623dcfc4c4b3497287dbc. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 17:00:14 PUNELPT0436 jenkins[1310]: 2024-07-22 11:30:14.768+0000 [id=17]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /$stapler/bound/91acb20f-c951-4da1-89e7-c267bb4d251a/render by chirag1212. Returning 403.
+Jul 22 17:00:16 PUNELPT0436 jenkins[1310]: 2024-07-22 11:30:16.000+0000 [id=1560]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 26ef2c377ad6610c02f006fa0c5e98fc7c6ded023c5623dcfc4c4b3497287dbc. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 17:00:16 PUNELPT0436 jenkins[1310]: 2024-07-22 11:30:16.001+0000 [id=1560]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /$stapler/bound/c6f212b2-0106-4127-8b55-5867653e5e57/render by chirag1212. Returning 403.
+Jul 22 17:00:17 PUNELPT0436 jenkins[1310]: 2024-07-22 11:30:17.306+0000 [id=17]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 26ef2c377ad6610c02f006fa0c5e98fc7c6ded023c5623dcfc4c4b3497287dbc. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 17:00:17 PUNELPT0436 jenkins[1310]: 2024-07-22 11:30:17.307+0000 [id=17]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /$stapler/bound/85f0ac48-bff4-4cea-9025-240090fe01cf/render by chirag1212. Returning 403.
+Jul 22 17:05:25 PUNELPT0436 jenkins[1310]: 2024-07-22 11:35:25.314+0000 [id=477]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 26ef2c377ad6610c02f006fa0c5e98fc7c6ded023c5623dcfc4c4b3497287dbc. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 17:05:25 PUNELPT0436 jenkins[1310]: 2024-07-22 11:35:25.315+0000 [id=477]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /$stapler/bound/0e53701d-c19e-4ef0-a602-43a4b4e2ef17/render by chirag1212. Returning 403.
+Jul 22 17:05:28 PUNELPT0436 jenkins[1310]: 2024-07-22 11:35:28.088+0000 [id=662]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 26ef2c377ad6610c02f006fa0c5e98fc7c6ded023c5623dcfc4c4b3497287dbc. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 17:05:28 PUNELPT0436 jenkins[1310]: 2024-07-22 11:35:28.089+0000 [id=662]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /$stapler/bound/0e53701d-c19e-4ef0-a602-43a4b4e2ef17/render by chirag1212. Returning 403.
+Jul 22 17:05:29 PUNELPT0436 jenkins[1310]: 2024-07-22 11:35:29.160+0000 [id=17]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 26ef2c377ad6610c02f006fa0c5e98fc7c6ded023c5623dcfc4c4b3497287dbc. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 17:05:29 PUNELPT0436 jenkins[1310]: 2024-07-22 11:35:29.161+0000 [id=17]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /$stapler/bound/0e53701d-c19e-4ef0-a602-43a4b4e2ef17/render by chirag1212. Returning 403.
+Jul 22 17:05:31 PUNELPT0436 jenkins[1310]: 2024-07-22 11:35:31.086+0000 [id=662]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 26ef2c377ad6610c02f006fa0c5e98fc7c6ded023c5623dcfc4c4b3497287dbc. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 17:05:31 PUNELPT0436 jenkins[1310]: 2024-07-22 11:35:31.087+0000 [id=662]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /$stapler/bound/01b89e3b-eaf7-41ca-b89d-c96ea80d0d5e/render by chirag1212. Returning 403.
+Jul 22 17:05:32 PUNELPT0436 jenkins[1310]: 2024-07-22 11:35:32.912+0000 [id=17]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 26ef2c377ad6610c02f006fa0c5e98fc7c6ded023c5623dcfc4c4b3497287dbc. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 17:05:32 PUNELPT0436 jenkins[1310]: 2024-07-22 11:35:32.913+0000 [id=17]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /$stapler/bound/21a7b35f-e8c4-4097-827a-234360dd0813/render by chirag1212. Returning 403.
+Jul 22 17:05:34 PUNELPT0436 jenkins[1310]: 2024-07-22 11:35:34.997+0000 [id=662]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 26ef2c377ad6610c02f006fa0c5e98fc7c6ded023c5623dcfc4c4b3497287dbc. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 17:05:34 PUNELPT0436 jenkins[1310]: 2024-07-22 11:35:34.998+0000 [id=662]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /$stapler/bound/a0db73b9-c777-4917-a71a-0218d87cf56a/render by chirag1212. Returning 403.
+Jul 22 17:05:41 PUNELPT0436 jenkins[1310]: 2024-07-22 11:35:41.093+0000 [id=17]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 26ef2c377ad6610c02f006fa0c5e98fc7c6ded023c5623dcfc4c4b3497287dbc. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 17:05:41 PUNELPT0436 jenkins[1310]: 2024-07-22 11:35:41.094+0000 [id=17]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /$stapler/bound/bbbe303d-2c40-4bdb-ae36-26c87ef0b561/render by chirag1212. Returning 403.
+Jul 22 17:13:31 PUNELPT0436 jenkins[31668]: 2024-07-22 11:43:31.969+0000 [id=1]#011WARNING#011o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+Jul 22 17:20:43 PUNELPT0436 jenkins[31668]: 2024-07-22 11:50:43.117+0000 [id=20]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 944facc7f2b009fafcf9a0408045a5fbe5cf87775da626627dfe0754f8d3f3f3. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 17:20:43 PUNELPT0436 jenkins[31668]: 2024-07-22 11:50:43.118+0000 [id=20]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /manage/pluginManager/updates/cancelRestart by chirag1212. Returning 403.
+Jul 22 17:20:46 PUNELPT0436 jenkins[31668]: 2024-07-22 11:50:46.462+0000 [id=21]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: Found invalid crumb 944facc7f2b009fafcf9a0408045a5fbe5cf87775da626627dfe0754f8d3f3f3. If you are calling this URL with a script, please use the API Token instead. More information: https://www.jenkins.io/redirect/crumb-cannot-be-used-for-script
+Jul 22 17:20:46 PUNELPT0436 jenkins[31668]: 2024-07-22 11:50:46.464+0000 [id=21]#011WARNING#011hudson.security.csrf.CrumbFilter#doFilter: No valid crumb was included in request for /manage/pluginManager/updates/cancelRestart by chirag1212. Returning 403.
+Jul 22 18:02:13 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jul 22 18:02:13 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jul 22 18:02:13 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jul 22 18:02:13 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jul 22 18:02:13 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jul 22 18:02:13 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jul 22 18:02:13 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jul 22 18:02:13 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jul 22 18:02:13 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Jul 22 18:33:03 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jul 22 18:33:03 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jul 22 18:33:03 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jul 22 18:33:03 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jul 22 18:33:03 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jul 22 18:33:03 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jul 22 18:33:03 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jul 22 18:33:03 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jul 22 18:33:03 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Jul 22 21:28:42 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jul 22 21:28:42 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jul 22 21:28:42 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jul 22 21:28:42 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jul 22 21:28:42 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jul 22 21:28:42 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jul 22 21:28:42 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jul 22 21:28:42 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jul 22 21:28:42 PUNELPT0436 gnome-shell[4278]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+CRITICAL:
+-------------------------------------------------------------------------------
+Health Checks
+Performing Health Checks...
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2024-07-22 11:16:59 IST; 12h ago
+       Docs: https://httpd.apache.org/docs/2.4/
+   Main PID: 9786 (apache2)
+      Tasks: 55 (limit: 18810)
+     Memory: 5.3M
+     CGroup: /system.slice/apache2.service
+             ├─9786 /usr/sbin/apache2 -k start
+             ├─9787 /usr/sbin/apache2 -k start
+             └─9788 /usr/sbin/apache2 -k start
+
+Jul 22 11:16:59 PUNELPT0436 systemd[1]: Starting The Apache HTTP Server...
+Jul 22 11:16:59 PUNELPT0436 apachectl[9785]: AH00112: Warning: DocumentRoot [/var/www/html/mystaticwebsite] does not exist
+Jul 22 11:16:59 PUNELPT0436 apachectl[9785]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Jul 22 11:16:59 PUNELPT0436 systemd[1]: Started The Apache HTTP Server.
+-----------------------------
+● mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2024-07-22 21:39:27 IST; 2h 13min ago
+   Main PID: 53287 (mysqld)
+     Status: "Server is operational"
+      Tasks: 39 (limit: 18810)
+     Memory: 360.6M
+     CGroup: /system.slice/mysql.service
+             └─53287 /usr/sbin/mysqld
+
+Jul 22 21:39:26 PUNELPT0436 systemd[1]: Starting MySQL Community Server...
+Jul 22 21:39:27 PUNELPT0436 systemd[1]: Started MySQL Community Server.
+-----------------------------
+Verifying Connectivity to External Services:
+PING google.com (216.58.203.14) 56(84) bytes of data.
+64 bytes from hkg12s09-in-f14.1e100.net (216.58.203.14): icmp_seq=1 ttl=112 time=24.2 ms
+64 bytes from hkg12s09-in-f14.1e100.net (216.58.203.14): icmp_seq=2 ttl=112 time=18.0 ms
+64 bytes from hkg12s09-in-f14.1e100.net (216.58.203.14): icmp_seq=3 ttl=112 time=11.5 ms
+64 bytes from hkg12s09-in-f14.1e100.net (216.58.203.14): icmp_seq=4 ttl=112 time=14.9 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 11.491/17.150/24.173/4.661 ms
+-----------------------------
+MySQL Database is up and running.
+-------------------------------------------------------------------------------
+Checking the CPU and MEMORY Usage: 
+Everything looks good!
+-------------------------------------------------------------------------------
