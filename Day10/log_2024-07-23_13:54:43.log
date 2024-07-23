@@ -1,0 +1,156 @@
+Validation of Required Commands:
+Command 'top' is Ready!...
+Command 'mpstat' is Ready!...
+Command 'ping' is Ready!...
+Command 'df' is Ready!...
+Command 'free' is Ready!...
+Command 'netstat' is Ready!...
+Command 'grep' is Ready!...
+Command 'awk' is Ready!...
+Command 'mail' is Ready!...
+-------------------------------------------------------------------------------
+Collecting System Metrics:
+CPU Usage:
+Linux 5.15.0-113-generic (PUNELPT0436) 	23/07/24 	_x86_64_	(8 CPU)
+
+01:54:45 PM IST  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+01:54:46 PM IST  all    1.38    0.00    0.63    0.00    0.00    0.00    0.00    0.00    0.00   97.99
+Average:     all    1.38    0.00    0.63    0.00    0.00    0.00    0.00    0.00    0.00   97.99
+-------------------------------------
+Memory Utilization:
+              total        used        free      shared  buff/cache   available
+Mem:          15802        5862        4041         531        5897        9075
+Swap:          2047           0        2047
+-------------------------------------
+Disk Space:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            7.7G     0  7.7G   0% /dev
+tmpfs           1.6G  2.4M  1.6G   1% /run
+/dev/nvme0n1p3  461G   89G  349G  21% /
+tmpfs           7.8G   59M  7.7G   1% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           7.8G     0  7.8G   0% /sys/fs/cgroup
+/dev/loop0      128K  128K     0 100% /snap/bare/5
+/dev/loop2      104M  104M     0 100% /snap/core/16928
+/dev/loop3      105M  105M     0 100% /snap/core/17200
+/dev/loop11     165M  165M     0 100% /snap/gnome-3-28-1804/198
+/dev/loop12     219M  219M     0 100% /snap/gnome-3-34-1804/93
+/dev/loop14     9.8M  9.8M     0 100% /snap/htop/4407
+/dev/loop9       68M   68M     0 100% /snap/cups/1058
+/dev/loop5       56M   56M     0 100% /snap/core18/2823
+/dev/loop13     505M  505M     0 100% /snap/gnome-42-2204/172
+/dev/loop10     243M  243M     0 100% /snap/gnome-3-34-1804/27
+/dev/loop6       64M   64M     0 100% /snap/core20/2318
+/dev/loop4      164M  164M     0 100% /snap/chromium/2897
+/dev/loop7       75M   75M     0 100% /snap/core22/1122
+/dev/loop8       67M   67M     0 100% /snap/cups/1052
+/dev/loop16      63M   63M     0 100% /snap/gtk-common-themes/1506
+/dev/loop22      13M   13M     0 100% /snap/kubectl/3315
+/dev/loop26     506M  506M     0 100% /snap/gnome-42-2204/176
+/dev/loop23     9.8M  9.8M     0 100% /snap/htop/4317
+/dev/loop24      13M   13M     0 100% /snap/kubectl/3302
+/dev/loop17      75M   75M     0 100% /snap/core22/1380
+/dev/loop20      13M   13M     0 100% /snap/snap-store/1113
+/dev/loop18      50M   50M     0 100% /snap/snap-store/433
+/dev/loop27     4.3M  4.3M     0 100% /snap/tree/18
+/dev/loop25      88M   88M     0 100% /snap/teams-for-linux/649
+/dev/loop19      88M   88M     0 100% /snap/teams-for-linux/645
+/dev/loop15      84M   84M     0 100% /snap/outlook-for-linux/18
+/dev/loop21      56M   56M     0 100% /snap/core18/2829
+/dev/loop28      92M   92M     0 100% /snap/gtk-common-themes/1535
+/dev/nvme0n1p1  239M  6.3M  232M   3% /boot/efi
+tmpfs           1.6G   56K  1.6G   1% /run/user/1001
+/dev/loop29     164M  164M     0 100% /snap/chromium/2910
+-------------------------------------
+Network Statistics:
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      1177/cupsd          
+tcp        0      0 127.0.0.1:33060         0.0.0.0:*               LISTEN      1598/mysqld         
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1598/mysqld         
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      934/systemd-resolve 
+tcp        0      0 127.0.0.1:4767          0.0.0.0:*               LISTEN      1402/PanGPS         
+tcp        0      0 127.0.0.1:4769          0.0.0.0:*               LISTEN      3797/PanGPA         
+tcp        0      0 0.0.0.0:25              0.0.0.0:*               LISTEN      3380/master         
+tcp6       0      0 :::8080                 :::*                    LISTEN      1280/java           
+tcp6       0      0 :::3000                 :::*                    LISTEN      3125/grafana        
+tcp6       0      0 ::1:631                 :::*                    LISTEN      1177/cupsd          
+tcp6       0      0 :::25                   :::*                    LISTEN      3380/master         
+tcp6       0      0 :::80                   :::*                    LISTEN      1449/apache2        
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           934/systemd-resolve 
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           16109/dhclient      
+udp        0      0 0.0.0.0:631             0.0.0.0:*                           1270/cups-browsed   
+udp        0      0 0.0.0.0:53898           0.0.0.0:*                           1173/avahi-daemon:  
+udp        0      0 224.0.0.251:5353        0.0.0.0:*                           5443/chrome         
+udp        0      0 224.0.0.251:5353        0.0.0.0:*                           5497/chrome --type= 
+udp        0      0 224.0.0.251:5353        0.0.0.0:*                           8337/teams-for-linu 
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           1173/avahi-daemon:  
+udp6       0      0 :::51908                :::*                                1173/avahi-daemon:  
+udp6       0      0 :::5353                 :::*                                1173/avahi-daemon:  
+-------------------------------------
+Top Processes by CPU and Memory Usage:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+einfoch+   16722 17.7  1.5 1190517152 244900 ?   Sl   13:49   0:59 /usr/share/code/code --type=renderer --crashpad-handler-pid=16679 --enable-crash-reporter=ad937925-13dd-4ae7-a0f4-f8f470eee997,no_channel --user-data-dir=/home/einfochips/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --app-path=/usr/share/code/resources/app --enable-sandbox --enable-blink-features=HighlightAPI --disable-blink-features=FontMatchingCTMigration, --lang=en-GB --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1721719208180884 --launch-time-ticks=3546353049 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,14880356027063013920,1827634064559641252,262144 --enable-features=kWebSQLAccess --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version --vscode-window-config=vscode:19e89023-4079-4efc-a739-5141a00c027c
+einfoch+    5443  4.7  2.1 34597416 348156 ?     SLl  12:39   3:34 /opt/google/chrome/chrome
+jenkins     1280  4.3 15.0 10067648 2439416 ?    Ssl  12:37   3:20 /usr/bin/java -Djava.awt.headless=true -jar /usr/share/java/jenkins.war --webroot=/var/cache/jenkins/war --httpPort=8080
+einfoch+   16694  4.2  0.7 34040988 120092 ?     Sl   13:49   0:14 /usr/share/code/code --type=gpu-process --crashpad-handler-pid=16679 --enable-crash-reporter=ad937925-13dd-4ae7-a0f4-f8f470eee997,no_channel --user-data-dir=/home/einfochips/.config/Code --gpu-preferences=WAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=0,i,14880356027063013920,1827634064559641252,262144 --enable-features=kWebSQLAccess --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version
+einfoch+    3956  4.0  1.8 4700820 306432 ?      Ssl  12:37   3:08 /usr/bin/gnome-shell
+einfoch+    5492  3.6  1.1 34201732 183600 ?     Sl   12:39   2:43 /opt/google/chrome/chrome --type=gpu-process --crashpad-handler-pid=5451 --enable-crash-reporter=510f750c-bbb5-4195-9f6b-9cda9698b55b, --change-stack-guard-on-fork=enable --gpu-preferences=WAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAEAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=3,i,13833571691465787879,12517858646698941299,262144 --variations-seed-version=20240722-050308.793000
+einfoch+   16659  3.1  1.0 1186268356 165800 ?   Ssl  13:49   0:10 /usr/share/code/code .
+root        1712  2.2  0.4 1021480 75204 ?       Sl   12:37   1:44 /opt/microsoft/mdatp/sbin/wdavdaemon edr 17 16 --log_level info
+einfoch+    3820  2.2  0.5 539456 92960 tty2     Sl+  12:37   1:42 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1001/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+einfoch+    6785  2.0  1.4 1188843448 239316 ?   Sl   12:40   1:32 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=5451 --enable-crash-reporter=510f750c-bbb5-4195-9f6b-9cda9698b55b, --change-stack-guard-on-fork=enable --lang=en-GB --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=23 --time-ticks-at-unix-epoch=-1721718451019718 --launch-time-ticks=204662503 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,13833571691465787879,12517858646698941299,262144 --variations-seed-version=20240722-050308.793000
+-------------------------------------------------------------------------------
+Log Analysis
+ERROR:
+WARNING:
+CRITICAL:
+-------------------------------------------------------------------------------
+Health Checks
+Performing Health Checks...
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2024-07-23 12:37:38 IST; 1h 17min ago
+       Docs: https://httpd.apache.org/docs/2.4/
+   Main PID: 1449 (apache2)
+      Tasks: 55 (limit: 18810)
+     Memory: 7.5M
+     CGroup: /system.slice/apache2.service
+             ├─1449 /usr/sbin/apache2 -k start
+             ├─1450 /usr/sbin/apache2 -k start
+             └─1451 /usr/sbin/apache2 -k start
+
+Jul 23 12:37:37 PUNELPT0436 systemd[1]: Starting The Apache HTTP Server...
+Jul 23 12:37:38 PUNELPT0436 apachectl[1306]: AH00112: Warning: DocumentRoot [/var/www/html/mystaticwebsite] does not exist
+Jul 23 12:37:38 PUNELPT0436 apachectl[1306]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Jul 23 12:37:38 PUNELPT0436 systemd[1]: Started The Apache HTTP Server.
+-------------------------------------
+● mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2024-07-23 12:37:39 IST; 1h 17min ago
+   Main PID: 1598 (mysqld)
+     Status: "Server is operational"
+      Tasks: 38 (limit: 18810)
+     Memory: 431.3M
+     CGroup: /system.slice/mysql.service
+             └─1598 /usr/sbin/mysqld
+
+Jul 23 12:37:37 PUNELPT0436 systemd[1]: Starting MySQL Community Server...
+Jul 23 12:37:39 PUNELPT0436 systemd[1]: Started MySQL Community Server.
+-------------------------------------
+Verifying Connectivity to External Services:
+PING google.com (142.250.183.142) 56(84) bytes of data.
+64 bytes from bom07s31-in-f14.1e100.net (142.250.183.142): icmp_seq=1 ttl=119 time=16.3 ms
+64 bytes from bom07s31-in-f14.1e100.net (142.250.183.142): icmp_seq=2 ttl=119 time=13.4 ms
+64 bytes from bom07s31-in-f14.1e100.net (142.250.183.142): icmp_seq=3 ttl=119 time=14.3 ms
+64 bytes from bom07s31-in-f14.1e100.net (142.250.183.142): icmp_seq=4 ttl=119 time=14.7 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 13.352/14.663/16.293/1.064 ms
+-------------------------------------
+MySQL Database is up and running.
+-------------------------------------------------------------------------------
+Checking the CPU and MEMORY Usage: 
+Everything looks good!
+-------------------------------------------------------------------------------

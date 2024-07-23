@@ -5,7 +5,8 @@
 # Initialize variables and configurations
 LOG_FILE="system_monitor.log"
 TIMESTAMP=$(date +"%Y-%m-%d_%H:%M:%S")
-REPORT_FILE="report_$TIMESTAMP.txt"
+REPORT_FILE="`pwd`/report_$TIMESTAMP.txt"
+LOG_FILE="`pwd`/log_$TIMESTAMP.log"
 CPU_THRESHOLD=50  
 MEM_THRESHOLD=50  
 EMAIL_ADDRESS="example@gmail.com"
@@ -56,7 +57,7 @@ generate_summary() {
     echo "Log Analysis"
     for severity in "${SEVERITY[@]}"; do
         echo "$severity:"
-        grep -i $severity $SYSLOG_FILE | head 10
+        grep -i $severity $SYSLOG_FILE
     done
 
     echo "-------------------------------------------------------------------------------"
@@ -95,7 +96,7 @@ send_email_alert() {
     if (( $(echo "$cpu_usage > $CPU_THRESHOLD" | bc -l) )) || (( "$memory_usage" > "$MEM_THRESHOLD" )); then
         local message="High CPU or Memory usage is Detected: CPU ($cpu_usage %) and MEMORY ($memory_usage %)"
         local subject="Critical Alert: High CPU or MEMORY Usage"
-        echo "$message" >>
+        echo "$message"
         
         # echo "$message" | mail -s "$subject" $EMAIL_ADDRESS
     else
@@ -142,5 +143,6 @@ else
         perform_health_check
         send_email_alert
     } > "$REPORT_FILE"
+    cp $REPORT_FILE $LOG_FILE
     echo "Report generated: $REPORT_FILE"
 fi
