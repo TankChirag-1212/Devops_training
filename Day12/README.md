@@ -13,27 +13,24 @@ Jenkins Pipeline Project
     * ![Descript](img/image3.png)
 <br>
 <br>
+
 + In the **`Pipeline Step`** select the `Pipeline script from SCM` option and in `SCM` option choosse Git. Now provide the project github repo and credentials if the repo is private (in this case my repo is private) and click Save to configure the project
     * ![Pipeline](img/image4.png)
 
 ## 2. Writting a Jenkinsfile:
 + Writing a declarative pipeline script **Jenkinsfile** that includes the following stages:
-    <br>
-    <br>
+    
     - **Clone Repository:** Clone the Maven project from the GitHub repository.
     ![clone](img/image5.png)
-    <br>
-    <br>
+
     - **Build:** Execute the Maven build process `(mvn build install)`, first create the env variable and provide it as parameter in Build stage
     ![Env](img/image6.png)
     ![Build](img/image7.png)    
-    <br>
-    <br>
-    - **Test:** Run unit tests as part of the Maven build.
+    
+    - **Test:** Run unit tests as part of the Maven build.<br>
     ![Test](img/image8.png)
-    <br>
-    <br>
-    - **Archive Artifacts:** Archive the build artifacts for future use.
+
+    - **Archive Artifacts:** Archive the build artifacts for future use.<br>
     ![archive](img/image9.png)
     
 ## 3. Building Project:
