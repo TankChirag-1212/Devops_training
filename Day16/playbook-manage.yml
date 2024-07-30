@@ -1,0 +1,34 @@
+- hosts: all
+  name: Managing files on managed nodes
+  become: yes
+  tasks:
+    - name: Create file if not present
+      ansible.builtin.file:
+        path: /home/ubuntu/file.txt
+        state: touch
+ 
+    - name: Create file with content
+      ansible.builtin.copy:
+        dest: /home/ubuntu/file_with_content.txt
+        content: "This is the content of the file.\n"
+ 
+    - name: Delete a file
+      ansible.builtin.file:
+        path: /home/ubuntu/abc.txt
+        state: absent
+ 
+    - name: Modify a file
+      ansible.builtin.lineinfile:
+        path: /home/ubuntu/file_with_content.txt
+        line: "New line to be added to the file."
+ 
+    - name: Ensure a directory is present
+      ansible.builtin.file:
+        path: /home/ubuntu/.ssh
+        state: directory
+ 
+    - name: Delete a directory
+      ansible.builtin.file:
+        path: /home/ubuntu/abc
+        state: absent
+ 

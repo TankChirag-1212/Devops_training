@@ -1,0 +1,27 @@
+- hosts: all
+  name: Configure Apache2 service
+  become: yes
+  tasks:
+    - name: Ensure Apache2 is running and enabled on boot
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+        
+    - name: Customising configuration for Apache2
+      copy:
+        dest: /etc/apache2/sites-available/000-default.conf
+        content: |
+          <VirtualHost *:80>
+              ServerAdmin webmaster@localhost
+              DocumentRoot /var/www/html
+              ErrorLog ${APACHE_LOG_DIR}/error.log
+              CustomLog ${APACHE_LOG_DIR}/access.log combined
+              # Custom configuration here
+              LogLevel info
+          </VirtualHost>
+ 
+    - name: Reloading Apache2
+      service:
+        name: apache2
+        state: reloaded

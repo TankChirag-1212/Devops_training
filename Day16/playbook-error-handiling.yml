@@ -1,0 +1,38 @@
+- hosts: target
+  become: yes
+  tasks:
+    - block:
+        - name: Restarting the my service with error handle
+          service:
+            name: myservice
+            state: started
+          # ignore_errors: yes
+          register: result_srv
+
+      rescue:
+        - name: msg if service is fail to start
+          debug:
+            msg: "Failed to start the myservice. Reason: {{ result_srv.msg }} "
+      
+      always:
+        - name: Print successful status
+          debug:
+            msg: "Task {{ 'failed' if result_srv.failed else 'succeeded' }}."
+
+    - block:
+        - name: modify file with error handle
+          lineinfile:
+            path: /home/ubuntu/temp/file_with_content.txt
+            line: "New line to be added to the file"
+          # ignore_errors: yes
+          register: result_file
+
+      rescue:
+        - name: msg if add line fail
+          debug:
+            msg: "Failed to modify the file. Directory does not exit"
+
+      always:
+        - name: Print successful status
+          debug:
+            msg: "Task {{ 'failed' if result_file.rc != 0 else 'succeeded' }}."
