@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Initialize Docker Swarm
-docker swarm init
+docker swarm init --advertise-addr 192.168.56.10
 
 # Create Docker Swarm Service
 docker service create --name nginx-service --publish 8080:80 nginx
@@ -16,6 +16,6 @@ kubectl apply -f webapp-deployment.yaml
 kubectl expose deployment webapp --type=NodePort --port=80
 
 # Deploy Web App Using Docker Compose
-docker-compose -f docker-compose-single-volume.yml up -d
+docker compose -f docker-compose-single-volume.yml up -d
 
 echo "Deployment completed successfully!"
