@@ -35,10 +35,10 @@ Jenkins Pipeline Project
     
 ## 3. Building Project:
 + First commit and push the Jenkins file we created above in the project repo and it must in the root directory of the project
-    ```
-        git add Jenkinsfile
-        git commit -m "adding jenkinsfile"
-        git push origin master
+    ```bash
+    git add Jenkinsfile
+    git commit -m "adding jenkinsfile"
+    git push origin master
     ```
 + Now go to the `First_Pipeline_project` and click on **Build Now** option to start the build
     - ![build now](img/image10.png)

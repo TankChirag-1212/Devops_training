@@ -15,7 +15,7 @@ Verify the Kubernetes cluster is functioning correctly and ingress-nginx addon i
 
 #### 2. Deploy Static Web App:
 Create index.html file to display the simple message
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +29,7 @@ Create index.html file to display the simple message
 ```
 
 Create a Dockerfile to create an nginx image to host the above index.html file
-```
+```Dockerfile
 FROM nginx:latest
 COPY index.html /usr/share/nginx/html
 EXPOSE 80
@@ -48,7 +48,7 @@ Now push the images generated to the docker hub<br>
 #### 3. Kubernetes Deployment:
 
 Create two kubernetes deployment frontend-deployment and another-deployment and the respective yaml files are below
-```
+```yml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -73,7 +73,7 @@ spec:
 **Same for the another-deployment just change the image and app name**
 
 For the respective deployment, created two services named frontend-service and another-service and the yaml files are shown below
-```
+```yml
 apiVersion: v1
 kind: Service
 metadata:
@@ -89,11 +89,12 @@ spec:
 **Same for the another-service just change selector name**
 
 Apply the deployment and service manifests to the Kubernetes cluster.
->kubectl apply -f frontend-deployment.yaml<br>
->kubectl apply -f another-deployment.yaml<br>
->kubectl apply -f another-service.yaml<br>
->kubectl apply -f frontend-service.yaml
-
+```bash
+kubectl apply -f frontend-deployment.yaml
+kubectl apply -f another-deployment.yaml
+kubectl apply -f another-service.yaml
+kubectl apply -f frontend-service.yaml
+```
 To check that all the deployments is successful run the below command<br>
 >kubectl get all
 
@@ -102,9 +103,9 @@ To check that all the deployments is successful run the below command<br>
 ## Stage 2: Configuring Ingress Networking
 #### 1. Install and Configure Ingress Controller:
 Install an ingress controller (e.g., Nginx Ingress Controller) in the Minikube cluster.
-
-`git clone https://github.com/nginxinc/kubernetes-ingress.git --branch v3.6.1.`
-
+```bash
+git clone https://github.com/nginxinc/kubernetes-ingress.git --branch v3.6.1.
+```
 Verify the ingress controller is running and accessible.
 
 `kubectl describe ingress`
@@ -122,10 +123,11 @@ Adding the ingress rules to route the request based on the paths user are trying
 
 ![alt text](img/image8.png)
 
-Now apply and verify the changes made to cluster<br>
->kubectl apply -f ingress-resource.yaml
->kubectl get all
-
+Now apply and verify the changes made to cluster
+```bash
+kubectl apply -f ingress-resource.yaml
+kubectl get all
+```
 when we curl the curl http://myapp.local/apple we get below output
 ![alt text](img/image9.png)
 
@@ -133,42 +135,46 @@ when we curl the curl http://myapp.local/apple we get below output
 ![alt text](img/image10.png)
 
 now to sercure the web application more securly we can use TLS certificate to secure the communictaion between the server and client. so to implement TLS termination first we have to create tls certificate and tls key. Creating TLS command using below command
->openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=nginxsvc/O=nginxsvc"
-
+```bash
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=nginxsvc/O=nginxsvc"
+```
 it will give 2 files `tls.crt` and `tls.key`
 Now create the secret for tls certificate and key using below command
->kubectl create secret tls tls-secret --cert=tls.crt --key=tls.key
-
+```bash
+kubectl create secret tls tls-secret --cert=tls.crt --key=tls.key
+```
 ![alt text](img/image11.png)
 
 Enable sticky sessions to ensure that requests from the same client are directed to the same backend pod and to enable sticky session update the ingress-resource file and the annotations for sticky session in metadata.
-```
+```yml
 annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
     nginx.ingress.kubernetes.io/affinity: "cookie"
 ```
-To verify that sticky session is established use the below command<br>
->curl -I https://myapp.local/apple -Lk
-
+To verify that sticky session is established use the below command
+```bash
+curl -I https://myapp.local/apple -Lk
+```
 ![alt text](img/image12.png)
 
 ## Stage 3: Implementing Horizontal Pod Autoscaling
 #### 1. Configure Horizontal Pod Autoscaler:
-First enable metrics-server in minikube using below command<br>
->minikube addons enable metrics-server<br>
-
-then to create the hpa autoscaler for both the deployments i.e. for frontend-deployment and another-deployment use the below command<br>
-
->kubectl autoscale deployment frontend-deployment --cpu-percent=50 --min=2 --max=5<br>
->kubectl autoscale deployment another-deployment --cpu-percent=50 --min=2 --max=5<br>
->kubectl get hpa
-
+First enable metrics-server in minikube using below command
+```bash
+minikube addons enable metrics-server
+```
+then to create the hpa autoscaler for both the deployments i.e. for frontend-deployment and another-deployment use the below command
+```bash
+kubectl autoscale deployment frontend-deployment --cpu-percent=50 --min=2 --max=5<br>
+kubectl autoscale deployment another-deployment --cpu-percent=50 --min=2 --max=5<br>
+kubectl get hpa
+```
 ![alt text](img/image13.png)
 
 Set thresholds for minimum and maximum pod replicas and to set thresholds for both the pods edit the deployment file of respective deployment and add the below resources
 
-```
+```yml
 resources:
    requests:
       cpu: 1m
@@ -179,13 +185,14 @@ kubectl get all
 ![alt text](img/image14.png)
 
 #### 2. Stress Testing:
-Perform stress testing to simulate traffic and validate the HPA configuration. and to see how the autoscaler reacts to increased load run the below command to create the load-generator pod and open the sh terminal<br>
-
->kubectl run -i --tty load-generator --rm --image=busybox:1.28 --restart=Never -- /bin/sh <br>
-
-then enter the below command in the terminal to send the multiple requests to the website<br>
->while sleep 0.01; do wget -q -O- http://myapp.local/apple; done
-
+Perform stress testing to simulate traffic and validate the HPA configuration. and to see how the autoscaler reacts to increased load run the below command to create the load-generator pod and open the sh terminal
+```bash
+kubectl run -i --tty load-generator --rm --image=busybox:1.28 --restart=Never -- /bin/sh 
+```
+then enter the below command in the terminal to send the multiple requests to the website
+```bash
+while sleep 0.01; do wget -q -O- http://myapp.local/apple; done
+```
 ![alt text](img/image15.png)
 
 Monitor the scaling behavior and ensure the application scales up and down based on the load.
@@ -198,7 +205,7 @@ Use the `watch kubectl get all -o wide` command to monitor the behavior of 2 hpa
 ## Stage 4: Cleanup
 
 for cleanup use the below commands
-```
+```bash
 kubectl get all
 kubectl delete all --all -n frontend
 kuebctl delete all --all -n another

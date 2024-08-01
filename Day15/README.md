@@ -114,7 +114,7 @@ Create a Jenkinsfile to define the CI/CD pipeline stages, including build, test,
 4. Ansible Playbook:
 - Basic Playbook Creation:
 Develop an Ansible playbook to automate the deployment of the Docker container.
-```
+```yml
 - hosts: all
   become: true
   vars:
@@ -141,7 +141,7 @@ Develop an Ansible playbook to automate the deployment of the Docker container.
 Install Docker on the target server (if Docker is not already installed).
 Pull the Docker image from the container registry.
 Run the Docker container with the required configurations.
-```
+```yml
 ---
 - hosts: all
   become: true
@@ -188,7 +188,7 @@ Run the Docker container with the required configurations.
 ```
 - Inventory File:
 Create an inventory file specifying the target server(s) for deployment.
-```
+```ini
 [target]
 managed1
 managed2

@@ -5,7 +5,7 @@ The script will leverage advanced Linux shell scripting techniques to monitor sy
 #### 1. Script Initialization: 
 
 * create the script file script.sh and give the execution permission as shown below
-```
+```bash
 touch script.sh
 chmod 744 script.sh
 vim script.sh
@@ -57,14 +57,17 @@ based on the severity in the SEVERITY array we created in the Initialise state w
 ![alt text](img/image9.png)
 
 #### 8. Automation and Scheduling:
-* Configuring the script to run periodically via cron for automated monitoring.<br>
-> crontab -e <br>
+* Configuring the script to run periodically via cron for automated monitoring.
+```bash
+crontab -e
+```
 
 * and schedule the cron job to run at minute 30 and provide the path to the script as shown below
 
 ![alt text](img/image10.png)
 
 * to verify the cronjob is placed run this command
-> crontab -l <br>
-
+```bash
+crontab -l <br>
+```
 ![alt text](img/image11.png)

@@ -17,9 +17,9 @@ and provide the correct branch from where jenkins have to fetch the code. Here i
 
 - ![SCM](img/image3.png)
 
-```
+`
 if you have not created the github login cridentials in jenkins then add one as shown in below image
-```
+`
 - ![cred add](img/image4.png)
 ---------------
 4. In **Build Steps** select the option `Invoke top-level Maven target` and in that select the maven version and provide the goal that is compile in this case
@@ -30,8 +30,10 @@ if you have not created the github login cridentials in jenkins then add one as 
 
 - ![Post-build](img/image6.png)
 ---------------
-6. Now we will create the `MVN Test` job by following the step from 1 to 4 and save the job. 
-- **there is only 1 change in 4th step i.e. instead of compile use test. Here we don't have to provide the post-build actions**
+6. Now we will create the `MVN Test` job by following the step from 1 to 4 and save the job. <br>
+- **`
+there is only 1 change in 4th step i.e. instead of compile use test. Here we don't have to provide the post-build actions
+`**
 ---------------
 7. Now before running the jobs we first create the `New View` at the Dashboard so that we can see the actual working of pipeline we created. Name the new view as `MVN Pipeline` and select the `Build Pipeline view` option and click create
 

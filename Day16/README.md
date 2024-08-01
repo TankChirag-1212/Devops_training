@@ -65,7 +65,7 @@ Problem Statement: Your team needs to automate repetitive tasks such as installi
 
 **Playbook Creation:**<br>
 - Write a playbook to install a specific package on all managed nodes.<br>
-```
+```yml
 - name: Installing apache2 server
   hosts: target
   become: yes
@@ -80,7 +80,7 @@ Problem Statement: Your team needs to automate repetitive tasks such as installi
         state: present
 ```
 - Create a playbook to configure a service with specific parameters.
-```
+```yml
 - hosts: target
   name: Configure Apache2 service
   become: yes
@@ -110,7 +110,7 @@ Problem Statement: Your team needs to automate repetitive tasks such as installi
         state: reloaded
 ```
 - Develop a playbook to manage files, such as creating, deleting, and modifying files on managed nodes.
-```
+```yml
 - hosts: target
   name: Managing files on managed nodes
   become: yes
@@ -164,7 +164,7 @@ Problem Statement: In a complex IT environment, tasks automated by Ansible playb
 **Playbook with Error Handling:**<br>
 - Write a playbook that includes tasks likely to fail, such as starting a non-existent service or accessing a non-existent file.
 - Implement error handling strategies using modules like block, rescue, and always.<br>
-```
+```yml
 - hosts: target
   become: yes
   tasks:

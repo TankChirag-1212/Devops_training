@@ -14,9 +14,10 @@ Now to install the latest version of jenkins add apt repository and perform inst
 
 ![alt text](img/image2.png)
 
-now run the below command to get the initial Admin Password. The command will print the password at console.<br>
-`sudo cat /var/lib/jenkins/secrets/initialAdminPassword`<br> 
-
+now run the below command to get the initial Admin Password. The command will print the password at console.
+```bash
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
 
 #### 2. Running a free style Job.
 
