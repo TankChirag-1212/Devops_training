@@ -1,0 +1,76 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    mysql_root_password: "password"
+    mysql_db_name: "database"
+    mysql_user: "appuser"
+    mysql_user_password: "appuser@123"
+
+  tasks:
+    - name: Installing Mysql and dependencies
+      package:
+       name: "{{item}}"
+       state: present
+       update_cache: yes
+      loop:
+       - mysql-server
+       - mysql-client 
+       - python3-mysqldb
+       - libmysqlclient-dev
+
+    - name: start and enable mysql service
+      service:
+        name: mysql
+        state: started
+        enabled: yes
+
+    - name: Create MySQL database
+      mysql_db:
+        name: "{{ mysql_db_name }}"
+        state: present
+        login_user: root
+        login_password: "{{ mysql_root_password }}"
+
+    - name: Create MySQL user
+      mysql_user:
+        name: "{{ mysql_user }}"
+        password: "{{ mysql_user_password }}"
+        priv: "{{ mysql_db_name }}.*:ALL"
+        state: present
+        login_user: root
+        login_password: "{{ mysql_root_password }}"
+       
+- hosts: all
+  become: yes
+  tasks:
+    - name: Update APT package repository cache
+      apt:
+        update_cache: yes
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Start Nginx service
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Copy web application files
+      copy:
+        src: /home/einfochips/Downloads/Ansible/Day17-task/project2/files/
+        dest: /var/www/html/
+        owner: www-data
+        group: www-data
+        mode: '0755'
+
+    - name: Configure web application
+      template:
+        src: /home/einfochips/Downloads/Ansible/Day17-task/project2/templates/app_config.php.j2
+        dest: /var/www/html/config.php
+        owner: www-data
+        group: www-data
+        mode: '0644'

@@ -1,34 +1,3 @@
-Project 01
-======
-### Deploy a Database Server with Backup Automation
-**Objective:** Automate the deployment and configuration of a PostgreSQL database server on an Ubuntu instance hosted on AWS, and set up regular backups.
-
-#### Problem Statement
-**Objective:** Automate the deployment, configuration, and backup of a PostgreSQL database server on an Ubuntu instance using Ansible.
-
-**Requirements:**
-1. **AWS Ubuntu Instance:** You have an Ubuntu server instance running on AWS.
-2. **Database Server Deployment:** Deploy and configure PostgreSQL on the Ubuntu instance.
-3. **Database Initialization:** Create a database and a user with specific permissions.
-4. **Backup Automation:** Set up a cron job for regular database backups and ensure that backups are stored in a specified directory.
-5. **Configuration Management:** Use Ansible to handle the deployment and configuration, including managing sensitive data like database passwords.
-
-### Deliverables
-1. **Ansible Inventory File**
-> Filename: inventory.ini
-
-```ini
-[target]
-ec2-instance ansible_host=000.000.000.000 ansible_user=user ansible_private_key=/path/to/the/private/key.pem
-```
-- Content: Defines the AWS Ubuntu instance and connection details for Ansible.
-
-![alt text](img/image1.png)
-
-2. **Ansible Playbook**
-> Filename: deploy_database.yml
-
-```yml
 ---
 - hosts: all
   become: yes
@@ -132,18 +101,3 @@ ec2-instance ansible_host=000.000.000.000 ansible_user=user ansible_private_key=
         month: "{{ cron_time.split()[3] }}"
         weekday: "{{ cron_time.split()[4] }}"
         job: "/usr/local/bin/mysql_backup.sh"
-```
-- Content: Automates the installation of PostgreSQL, sets up the database, creates a user, and configures a cron job for backups. It also includes variables for database configuration and backup settings.
-
-![alt text](img/image2.png)
-
-4. **Backup Script**
-> Filename: scripts/backup.sh
-- Content: A script to perform the backup of the PostgreSQL database. This script should be referenced in the cron job defined in the playbook.
-```bash
-#!/bin/bash
-
-mkdir /srv/backups/mysql/
-
-mysqldump -u {{ mysql_user }} -p{{ mysql_user_password }} {{ mysql_db_name }} > {{ backup_dir }}/backup_$(date +\%F).sql
-```
