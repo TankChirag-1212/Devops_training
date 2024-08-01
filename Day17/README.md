@@ -33,12 +33,12 @@ ec2-instance ansible_host=000.000.000.000 ansible_user=user ansible_private_key=
 - hosts: all
   become: yes
   vars:
-    mysql_root_password: "password"
-    mysql_db_name: "database"
-    mysql_user: "appuser"
-    mysql_user_password: "appuser@123"
+    mysql_root_password: "your_mysql_root_password"
+    mysql_db_name: "your_mydatabase"
+    mysql_user: "your_user"
+    mysql_user_password: "your_user_pass"
     backup_dir: "/srv/backups/mysql"
-    cron_time: "0 2 * * *"  # Daily at 2 AM
+    cron_time: "0 2 * * *"
  
   tasks:
     - name: Installing Mysql and dependencies

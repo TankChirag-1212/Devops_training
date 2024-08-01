@@ -25,10 +25,10 @@ target ansible_host=000.000.000.000 ansible_user=user ansible_private_key=/path/
 - hosts: all
   become: yes
   vars:
-    mysql_root_password: "passw0rd"
-    mysql_db_name: "database"
-    mysql_user: "appuser"
-    mysql_user_password: "appuser@123"
+    mysql_root_password: "your_root_pass"
+    mysql_db_name: "database_name"
+    mysql_user: "user_name"
+    mysql_user_password: "user_pass"
 
   tasks:
     - name: Installing Mysql  and dependencies
@@ -84,7 +84,7 @@ target ansible_host=000.000.000.000 ansible_user=user ansible_private_key=/path/
 
     - name: Copy web application files
       copy:
-        src: /home/DevopsTraining/DevopsTraining/Day17/project2/files/index.html
+        src: files/index.html
         dest: /var/www/html/
         owner: www-data
         group: www-data
@@ -107,10 +107,10 @@ The deployment of the web application and its configuration to connect to the da
 > **Filename:** templates/app_config.php.j2
 ```php
 <?php
-    define('DB_SERVER', '127.0.0.1');
-    define('DB_USERNAME', 'appuser');
-    define('DB_PASSWORD', 'appuser@123');
-    define('DB_DATABASE', 'database');
+    define('DB_SERVER', '0.0.0.0');
+    define('DB_USERNAME', 'user_name');
+    define('DB_PASSWORD', 'user_pass');
+    define('DB_DATABASE', 'database_name');
 ?>
 ```
 **Content:** Defines a configuration file for the web application that includes placeholders for dynamic values such as database connection details.
