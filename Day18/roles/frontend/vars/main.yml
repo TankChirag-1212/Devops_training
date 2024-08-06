@@ -1,0 +1,4 @@
+server_name: 0.0.0.0
+root_dir: /usr/share/nginx/html
+backend_host: 0.0.0.0
+backend_port: 3000

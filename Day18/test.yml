@@ -1,0 +1,7 @@
+- name: Testing the connection
+  hosts: web_app
+  
+  tasks:
+    - name: Testing Nodes connection
+      ping:
+        
