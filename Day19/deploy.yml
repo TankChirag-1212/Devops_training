@@ -1,0 +1,8 @@
+- name: Deploying a Three-tier Web application
+  hosts: all
+  become: yes
+
+  roles:
+    - frontend
+    - backend
+    - database

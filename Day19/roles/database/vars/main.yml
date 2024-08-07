@@ -1,0 +1,4 @@
+db_user: appUser
+db_password: user@123
+db_root_password: password
+db_name: testDB

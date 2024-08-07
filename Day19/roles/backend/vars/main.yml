@@ -1,0 +1,4 @@
+db_host: "localhost"
+db_user: "appUser"
+db_password: "user@123"
+db_name: "testDB"

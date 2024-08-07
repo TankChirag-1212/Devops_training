@@ -1,0 +1,4 @@
+server_name: 54.193.40.82
+root_dir: /usr/share/nginx/html
+backend_host: 54.193.40.82
+backend_port: 3000
