@@ -1,0 +1,17 @@
+plugin: aws_ec2
+regions:
+  - us-west-1
+  - us-west-2
+  - us-east-1
+  - us-east-2
+  - ap-south-1
+filters:
+  instance-state-name:
+    - running
+  tag:Name: 
+    - Chirag
+hostnames:
+  - ip-address
+compose:
+  ansible_host: ip_address
+  
