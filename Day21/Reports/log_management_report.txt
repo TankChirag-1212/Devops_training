@@ -1,0 +1,6 @@
+Log Management Report - Thursday 08 August 2024 06:08:36 PM IST
+===================================
+Starting log management tasks...
+Log file not found: ./Log_dir/Logfile.log
+Logs older than 1 days deleted.
+Log management tasks completed.

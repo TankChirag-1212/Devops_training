@@ -1,0 +1,7 @@
+Log Management Report - Thursday 08 August 2024 09:00:23 PM IST
+===================================
+Starting log management tasks...
+2642
+Log file size is within limits: ./Log_dir/Logfile_20240808_204411.log (Size:  bytes)
+Logs older than 1 days deleted.
+Log management tasks completed.

@@ -1,0 +1,51 @@
+Running System Performance Metrics Check at Thursday 08 August 2024 08:44:11 PM IST
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            7.7G     0  7.7G   0% /dev
+tmpfs           1.6G  2.4M  1.6G   1% /run
+/dev/nvme0n1p3  461G  122G  317G  28% /
+tmpfs           7.8G  134M  7.6G   2% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           7.8G     0  7.8G   0% /sys/fs/cgroup
+/dev/loop1      128K  128K     0 100% /snap/bare/5
+/dev/loop3      104M  104M     0 100% /snap/core/16928
+/dev/loop2      167M  167M     0 100% /snap/chromium/2923
+/dev/loop7       56M   56M     0 100% /snap/core18/2823
+/dev/loop4      166M  166M     0 100% /snap/chromium/2921
+/dev/loop10      67M   67M     0 100% /snap/cups/1052
+/dev/loop8      165M  165M     0 100% /snap/gnome-3-28-1804/198
+/dev/loop5      105M  105M     0 100% /snap/core/17200
+/dev/loop6      243M  243M     0 100% /snap/gnome-3-34-1804/27
+/dev/loop11      75M   75M     0 100% /snap/core22/1380
+/dev/loop19     9.8M  9.8M     0 100% /snap/htop/4407
+/dev/loop15      63M   63M     0 100% /snap/gtk-common-themes/1506
+/dev/loop17      13M   13M     0 100% /snap/kubectl/3302
+/dev/loop14     506M  506M     0 100% /snap/gnome-42-2204/176
+/dev/loop13      64M   64M     0 100% /snap/core20/2318
+/dev/loop22     4.3M  4.3M     0 100% /snap/tree/18
+/dev/loop16      68M   68M     0 100% /snap/cups/1058
+/dev/loop21     9.8M  9.8M     0 100% /snap/htop/4317
+/dev/loop23      88M   88M     0 100% /snap/teams-for-linux/649
+/dev/loop12      56M   56M     0 100% /snap/core18/2829
+/dev/loop20      88M   88M     0 100% /snap/teams-for-linux/645
+/dev/loop18      92M   92M     0 100% /snap/gtk-common-themes/1535
+/dev/loop24      50M   50M     0 100% /snap/snap-store/433
+/dev/loop25     505M  505M     0 100% /snap/gnome-42-2204/172
+/dev/loop28     219M  219M     0 100% /snap/gnome-3-34-1804/93
+/dev/loop27      13M   13M     0 100% /snap/kubectl/3315
+/dev/loop26      13M   13M     0 100% /snap/snap-store/1113
+/dev/loop29      84M   84M     0 100% /snap/outlook-for-linux/18
+/dev/nvme0n1p1  239M  6.3M  232M   3% /boot/efi
+tmpfs           1.6G   68K  1.6G   1% /run/user/1001
+/dev/loop30      75M   75M     0 100% /snap/core22/1439
+/dev/loop9       51M   51M     0 100% /snap/aws-cli/754
+/dev/loop31      51M   51M     0 100% /snap/aws-cli/756
+
+Memory Usage:
+              total        used        free      shared  buff/cache   available
+Mem:           15Gi       4.3Gi       2.2Gi       631Mi       8.9Gi        10Gi
+Swap:         2.0Gi          0B       2.0Gi
+
+CPU Load:
+%Cpu(s):  3.2 us,  3.2 sy,  0.0 ni, 93.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+
