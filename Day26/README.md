@@ -10,7 +10,7 @@ To evaluate your proficiency in designing, deploying, and managing a comprehensi
 You are tasked with deploying a scalable e-commerce platform for "ShopMax," an online retailer preparing for a major sales event. The platform needs to handle fluctuating web traffic, securely manage user and product data, and serve both dynamic and static content efficiently. The infrastructure should be cost-effective and secure, with high availability and fault tolerance.
 
 ## Project Steps and Deliverables:
-### 1. VPC Design and Implementation :
+### 1. VPC Design and Implementation:
 
 - **Design a Custom VPC:**
     - Create a VPC with four subnets: two public subnets (for EC2 instances and Load Balancers) and two private subnets (for RDS and backend services).
@@ -37,7 +37,7 @@ You are tasked with deploying a scalable e-commerce platform for "ShopMax," an o
     - Implement network ACLs to add an additional layer of security at the subnet level.
 ![alt text](img/image9.png)
 
-### 2. S3 Bucket Configuration for Static Content :
+### 2. S3 Bucket Configuration for Static Content:
 
 - **Create and Configure S3 Buckets:**
     - Create an S3 bucket named shopmax-static-content-chirag for hosting static assets (e.g., images, CSS, JavaScript).
@@ -58,7 +58,7 @@ You are tasked with deploying a scalable e-commerce platform for "ShopMax," an o
 - **Optimize Content Delivery:**
     - (Optional) Set up an S3 bucket for backups or archival purposes, using lifecycle rules to transition older files to cheaper storage classes like Glacier.
 
-### 3. EC2 Instance Setup and Web Server Configuration :
+### 3. EC2 Instance Setup and Web Server Configuration:
 
 - **Launch EC2 Instances:**
     - Launch a pair of EC2 instances (t2.micro ONLY) in the public subnets using an Amazon Linux 2 AMI.
@@ -121,12 +121,13 @@ sudo systemctl restart apache2
 ```
 
 <span style="color: red">
-Change the paths of the css, js files and paths of all the images in all of the .html files with the path of objects in the s3 bucket <b>shopmax-static-content-chirag<b>
+Change the paths of the css, js files and paths of all the images in all of the .html files with the path of objects in the s3 bucket <b>shopmax-static-content-chirag</b>
 </span>
 
-### 4. RDS Setup and Database Configuration :
+### 4. RDS Setup and Database Configuration:
 
 - **Provision an RDS MySQL Instance:**
+
     - Launch an RDS instance (Free Tier Template Type, t3.micro ONLY) in the private subnets, ensuring that it is not publicly accessible.
 
     ![alt text](img/image34.png)
@@ -142,7 +143,7 @@ Change the paths of the css, js files and paths of all the images in all of the 
 
     ![alt text](img/image36.png)
 
-### 5. Load Balancer and Auto Scaling Configuration :
+### 5. Load Balancer and Auto Scaling Configuration:
 
 - **Set Up an Application Load Balancer (ALB):**
     - Deploy an ALB in the public subnets to distribute traffic across the EC2 instances.
@@ -173,7 +174,7 @@ Change the paths of the css, js files and paths of all the images in all of the 
 ![alt text](img/image19.png)
 ![alt text](img/image20.png)
 
-### 6. Testing, Validation, and Optimization :
+### 6. Testing, Validation, and Optimization:
 
 - **Full Application Test:**
     - Access the e-commerce application via the ALB DNS name and ensure that both static and dynamic content is being served correctly.
@@ -219,7 +220,7 @@ Change the paths of the css, js files and paths of all the images in all of the 
 1. VPC, Route Tables, Subnets, Internet Gateway and Security Groups:<br>
 ![alt text](img/image33.png)
 
-### 7. Documentation and Report :
+### 7. Documentation and Report:
 
 - **Detailed Documentation:**
     - Document each step taken during the project, including VPC design, EC2 and RDS configurations, S3 setup, Load Balancer and Auto Scaling implementation, and security measures.
