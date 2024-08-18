@@ -226,9 +226,9 @@ Change the paths of the css, js files and paths of all the images in all of the 
     - Document each step taken during the project, including VPC design, EC2 and RDS configurations, S3 setup, Load Balancer and Auto Scaling implementation, and security measures.
     - Provide screenshots and logs as evidence of configuration and testing.
     
-<center style="cursor: pointer">
-<a src=./README.md>README.md</a>
-</center>
+<p style="text-align:center">
+  <a href="./README.md">README.md</a>
+</p>
 
 - **Final Report:**
     - Summarize the project, highlighting any challenges faced and how they were resolved.
