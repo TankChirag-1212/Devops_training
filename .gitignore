@@ -1,4 +1,6 @@
-tls.crt
-tls.key
+terraform.tfstate.backup
+terraform.tfstate
 Daily_Git_Push.sh
+*.crt
+*.key
 Zip_daily.sh
