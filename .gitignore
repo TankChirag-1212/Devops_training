@@ -6,3 +6,4 @@ Zip_daily.sh
 *.tfstate
 *.tfstate.*
 .terraform/
+*.lock.hcl
