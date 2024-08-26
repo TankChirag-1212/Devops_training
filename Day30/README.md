@@ -11,9 +11,6 @@ You will create a Terraform configuration that deploys an EC2 instance and an S3
 ## Specifications
 
 
-configured aws profiles dev, staging and prod
-![alt text](img/image1.png)
-
 ### Terraform Modules
 
 - **Module Components:**
