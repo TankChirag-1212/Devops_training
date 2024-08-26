@@ -1,7 +1,6 @@
 variable "ami_map" {
   description = "AMI ID for the EC2 instance"
   type        = string
-  default = "ami-05134c8ef96964280"  #ubuntu version 24.40
 }
 
 variable "instance_type" {
@@ -33,8 +32,3 @@ variable "security_group_id" {
   description = "security group id for ec2"
   type = string
 }
-
-# variable "project_name" {
-#   description = "Adding Project Tag to Ec2 instance"
-#   type = string
-# }

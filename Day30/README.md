@@ -55,7 +55,7 @@ configured aws profiles dev, staging and prod
 ```bash
 # Create EC2 instance
 resource "aws_instance" "webserver" {
-  ami                         = lookup(var.ami_map, "ami1", "ami-05134c8ef96964280")
+  ami                         = lookup(var.ami_map, "ami1", <ami_id>)
   instance_type               = var.instance_type
   iam_instance_profile        = var.iam_ec2_profile_name
   associate_public_ip_address = true
@@ -113,7 +113,6 @@ resource "aws_s3_bucket_policy" "s3_policy" {
 variable "ami_map" {
   description = "AMI ID for the EC2 instance"
   type        = string
-  default = "ami-05134c8ef96964280"  #ubuntu version 24.40
 }
 
 variable "instance_type" {
@@ -304,17 +303,4 @@ tags = {
 3. **Provisioner Documentation:**
    - Include descriptions of the provisioners used and their purpose.<br>
   [README.md](README.md)
-## Deliverables
 
-1. **Terraform Module:**
-   - Reusable module files in `modules/aws_infrastructure`.
-2. **Main Terraform Configuration:**
-   - Root Terraform configuration files.
-3. **Provisioner Scripts:**
-   - Scripts used by `remote-exec` provisioner.
-4. **Workspace Documentation:**
-   - Documentation on using Terraform workspaces.
-5. **Validation Screenshots/Logs:**
-   - Screenshots or logs showing successful provisioner execution and Apache running on the EC2 instance.
-6. **Cleanup Confirmation:**
-   - Evidence of successful resource destruction in all workspaces.
