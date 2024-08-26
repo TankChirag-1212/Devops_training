@@ -71,7 +71,7 @@ variable "aws_region" {
 ```yml
 # Create VPC, subnets, and security groups
 resource "aws_vpc" "ProjectVPC" {
-  cidr_block = "10.0.0.0/16"
+  cidr_block = "<vpc-cidr>"
   tags = {
     Name = "MyVPC-chirag"
   }
@@ -79,20 +79,20 @@ resource "aws_vpc" "ProjectVPC" {
 # Create a public subnet
 resource "aws_subnet" "Project_public_subnet" {
   vpc_id                  = aws_vpc.ProjectVPC.id
-  cidr_block              = "10.0.1.0/24"
+  cidr_block              = "<subnet-cidr>"
   map_public_ip_on_launch = true
 }
 # Create a private subnet
 resource "aws_subnet" "Project_private_subnet1" {
   vpc_id     = aws_vpc.ProjectVPC.id
-  cidr_block = "10.0.2.0/24"
+  cidr_block = "<subnet-cidr>"
   availability_zone = "us-west-2a"
 }
 
 # Create a private subnet with availability zone
 resource "aws_subnet" "Project_private_subnet2" {
     vpc_id     = aws_vpc.ProjectVPC.id
-    cidr_block = "10.0.3.0/24"
+    cidr_block = "<subnet-cidr>"
     availability_zone = "us-west-2b"
 }
 # Create an internet gateway
@@ -209,7 +209,7 @@ resource "aws_instance" "webserver" {
 ```yml
 # EC2 Instance AMI Id
 variable "ec2_ami_id" {
-  default = "ami-0aff18ec83b712f05"
+  default = "<ami-id>"
 
 }
 

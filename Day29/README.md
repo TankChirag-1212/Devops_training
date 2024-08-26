@@ -43,7 +43,7 @@ provider "aws" {
 
 # S3 bucket for Terraform state
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "shopmax-static-chirag"  # Replace with a unique bucket name
+  bucket = "<state-bucket-name>"  # Replace with a unique bucket name
 
   tags = {
     Name = "S3-bucket-chirag"
@@ -68,7 +68,7 @@ output "s3_bucket_name" {
 ```yml
 # DynamoDB table for state locking
 resource "aws_dynamodb_table" "terraform_lock" {
-  name         = "terraform-lock-table-chirag"
+  name         = "<dynamoDB-table-name>"
   read_capacity  = 5
   write_capacity = 5
   hash_key      = "LockID"
@@ -93,10 +93,10 @@ output "dynamodb_table_name" {
 ```yml
 terraform {
   backend "s3" {
-    bucket         = "shopmax-static-chirag"  # Same as the S3 bucket name
-    key            = "terraform.tfstate"  # Replace with the path where you want to store the state file
-    region         = "us-west-2"  # Same as the S3 bucket region
-    dynamodb_table = "terraform-state-lock-chirag"  # Same as the DynamoDB table name
+    bucket         = "<state-bucket-name>"  
+    key            = "terraform.tfstate"  
+    region         = "us-west-2" 
+    dynamodb_table = "<dynamoDB-name>" 
     encrypt        = true
   }
 }
@@ -133,7 +133,7 @@ output "cidr_blocks_string" {
 - Use `lookup` to set default values if a variable is not provided.
 ```bash
 resource "aws_instance" "webserver" {
-  ami                         = lookup(var.ami, "ami-05134c8ef96964280")
+  ami                         = lookup(var.ami, "<ami-id>")
   instance_type               = lookup(var.instance_type, "t3.micro") 
   iam_instance_profile        = var.iam_ec2_profile_name
   associate_public_ip_address = true
@@ -220,10 +220,3 @@ added the new tag to the ec2 instance and changed the ec2 instance type to the t
 - Document the Terraform module, including how to use the variables, functions, and state management.
 - Include instructions on how to configure and manage the remote state and locking mechanism.
 - Provide screenshots or logs showing the deployment process and testing of state locking.
-
-## Deliverables
-
-- **Terraform Configuration Files**: All `.tf` files including the main configuration and the custom module.
-- **Documentation**: Detailed documentation explaining the use of variables, functions, state management, and how to test the locking mechanism.
-- **Test Results**: Evidence that state locking was successfully tested (e.g., screenshots of simultaneous `terraform apply` attempts).
-- **Resource Teardown Confirmation**: Confirmation that all AWS resources were properly destroyed using `terraform destroy`.
