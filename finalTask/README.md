@@ -6,7 +6,7 @@ In this project, participants will deploy a modular e-commerce application using
 
 ## Project Objectives
 
-### Link to Fruitables Website Github Repo => https://github.com/TankChirag-1212/final-Task
+### Link to Fruitables Website Github Repo => https://github.com/TankChirag-1212/Fruitables-Website
 
 1. **Modular Infrastructure:** Use Terraform to create and manage modular infrastructure components.
 2. **Static Asset Storage:** Store and fetch static assets from an S3 bucket.
