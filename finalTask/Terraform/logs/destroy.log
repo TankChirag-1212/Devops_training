@@ -1,0 +1,678 @@
+[0m[1mmodule.vpc.aws_vpc.my_vpc: Refreshing state... [id=vpc-02e5003cab44b8494][0m
+[0m[1mmodule.s3.aws_s3_bucket.app_bucket: Refreshing state... [id=fruitables-1.0.0-chirag][0m
+[0m[1mmodule.vpc.aws_internet_gateway.my_igw: Refreshing state... [id=igw-0ea9ef54738eb5271][0m
+[0m[1mmodule.security_group.aws_security_group.worker_sg: Refreshing state... [id=sg-0261752fc8d05c772][0m
+[0m[1mmodule.security_group.aws_security_group.controller_sg: Refreshing state... [id=sg-05ec1a8080806756b][0m
+[0m[1mmodule.vpc.aws_route_table.public_rt: Refreshing state... [id=rtb-0f862865ba2bce9ba][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_egress_rule.worker_sg_egress: Refreshing state... [id=sgr-054931d90850438b8][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[2]: Refreshing state... [id=sgr-08a5e720774e8fa19][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[1]: Refreshing state... [id=sgr-0ec1fdfbe02bedc9b][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[4]: Refreshing state... [id=sgr-0bdd60b81ef56f5f5][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[0]: Refreshing state... [id=sgr-00cd35f53770b2625][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[3]: Refreshing state... [id=sgr-0843100184fe7b18f][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_egress_rule.controller_sg_egress: Refreshing state... [id=sgr-03fb51f1eb3158fc3][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[0]: Refreshing state... [id=sgr-078193b1ed111e936][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[3]: Refreshing state... [id=sgr-0f7057547a7326817][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[8]: Refreshing state... [id=sgr-0410e1c3c8a366bbe][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[5]: Refreshing state... [id=sgr-0bff8266b4050dcd1][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[2]: Refreshing state... [id=sgr-0ee90e2d56d467a48][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[4]: Refreshing state... [id=sgr-0207eefdb72ec7256][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[1]: Refreshing state... [id=sgr-0ef2d2acf4b9bbcfd][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[6]: Refreshing state... [id=sgr-077096e2da1d32752][0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[7]: Refreshing state... [id=sgr-09ed97d50c7eb530e][0m
+[0m[1mmodule.s3.aws_s3_bucket_public_access_block.app_bucket_public_access: Refreshing state... [id=fruitables-1.0.0-chirag][0m
+[0m[1mmodule.s3.aws_s3_bucket_versioning.bucket_versioning: Refreshing state... [id=fruitables-1.0.0-chirag][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [31m-[0m destroy[0m
+
+Terraform will perform the following actions:
+
+[1m  # module.s3.aws_s3_bucket.app_bucket[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_s3_bucket" "app_bucket" {
+      [31m-[0m[0m arn                         = "arn:aws:s3:::fruitables-1.0.0-chirag" [90m-> null[0m[0m
+      [31m-[0m[0m bucket                      = "fruitables-1.0.0-chirag" [90m-> null[0m[0m
+      [31m-[0m[0m bucket_domain_name          = "fruitables-1.0.0-chirag.s3.amazonaws.com" [90m-> null[0m[0m
+      [31m-[0m[0m bucket_regional_domain_name = "fruitables-1.0.0-chirag.s3.ap-southeast-2.amazonaws.com" [90m-> null[0m[0m
+      [31m-[0m[0m force_destroy               = false [90m-> null[0m[0m
+      [31m-[0m[0m hosted_zone_id              = "Z1WCIGYICN2BYD" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "fruitables-1.0.0-chirag" [90m-> null[0m[0m
+      [31m-[0m[0m object_lock_enabled         = false [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "ap-southeast-2" [90m-> null[0m[0m
+      [31m-[0m[0m request_payer               = "BucketOwner" [90m-> null[0m[0m
+      [31m-[0m[0m tags                        = {
+          [31m-[0m[0m "Name" = "fruitables-1.0.0-chirag"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all                    = {
+          [31m-[0m[0m "Name" = "fruitables-1.0.0-chirag"
+        } [90m-> null[0m[0m
+        [90m# (3 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m grant {
+          [31m-[0m[0m id          = "e9795e149da14393b2aad04fc537a9b533c377ff11f44636857d0be33f7389e7" [90m-> null[0m[0m
+          [31m-[0m[0m permissions = [
+              [31m-[0m[0m "FULL_CONTROL",
+            ] [90m-> null[0m[0m
+          [31m-[0m[0m type        = "CanonicalUser" [90m-> null[0m[0m
+            [90m# (1 unchanged attribute hidden)[0m[0m
+        }
+
+      [31m-[0m[0m server_side_encryption_configuration {
+          [31m-[0m[0m rule {
+              [31m-[0m[0m bucket_key_enabled = false [90m-> null[0m[0m
+
+              [31m-[0m[0m apply_server_side_encryption_by_default {
+                  [31m-[0m[0m sse_algorithm     = "AES256" [90m-> null[0m[0m
+                    [90m# (1 unchanged attribute hidden)[0m[0m
+                }
+            }
+        }
+
+      [31m-[0m[0m versioning {
+          [31m-[0m[0m enabled    = true [90m-> null[0m[0m
+          [31m-[0m[0m mfa_delete = false [90m-> null[0m[0m
+        }
+    }
+
+[1m  # module.s3.aws_s3_bucket_public_access_block.app_bucket_public_access[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_s3_bucket_public_access_block" "app_bucket_public_access" {
+      [31m-[0m[0m block_public_acls       = false [90m-> null[0m[0m
+      [31m-[0m[0m block_public_policy     = false [90m-> null[0m[0m
+      [31m-[0m[0m bucket                  = "fruitables-1.0.0-chirag" [90m-> null[0m[0m
+      [31m-[0m[0m id                      = "fruitables-1.0.0-chirag" [90m-> null[0m[0m
+      [31m-[0m[0m ignore_public_acls      = false [90m-> null[0m[0m
+      [31m-[0m[0m restrict_public_buckets = false [90m-> null[0m[0m
+    }
+
+[1m  # module.s3.aws_s3_bucket_versioning.bucket_versioning[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_s3_bucket_versioning" "bucket_versioning" {
+      [31m-[0m[0m bucket                = "fruitables-1.0.0-chirag" [90m-> null[0m[0m
+      [31m-[0m[0m id                    = "fruitables-1.0.0-chirag" [90m-> null[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+
+      [31m-[0m[0m versioning_configuration {
+          [31m-[0m[0m status     = "Enabled" [90m-> null[0m[0m
+            [90m# (1 unchanged attribute hidden)[0m[0m
+        }
+    }
+
+[1m  # module.security_group.aws_security_group.controller_sg[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_security_group" "controller_sg" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group/sg-05ec1a8080806756b" [90m-> null[0m[0m
+      [31m-[0m[0m description            = "Managed by Terraform" [90m-> null[0m[0m
+      [31m-[0m[0m egress                 = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 0
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "-1"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 0
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sg-05ec1a8080806756b" [90m-> null[0m[0m
+      [31m-[0m[0m ingress                = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 10250
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 10250
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 10257
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 10257
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 10259
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 10259
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 22
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 22
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 2379
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 2380
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 443
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 443
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 6443
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 6443
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 8080
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 8080
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 80
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 80
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m name                   = "Controller-sg-20240902100326477200000002" [90m-> null[0m[0m
+      [31m-[0m[0m name_prefix            = "Controller-sg-" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id               = "326151034032" [90m-> null[0m[0m
+      [31m-[0m[0m revoke_rules_on_delete = false [90m-> null[0m[0m
+      [31m-[0m[0m tags                   = {
+          [31m-[0m[0m "Name" = "Controller-sg-chirag"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {
+          [31m-[0m[0m "Name" = "Controller-sg-chirag"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id                 = "vpc-02e5003cab44b8494" [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_security_group.worker_sg[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_security_group" "worker_sg" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group/sg-0261752fc8d05c772" [90m-> null[0m[0m
+      [31m-[0m[0m description            = "Managed by Terraform" [90m-> null[0m[0m
+      [31m-[0m[0m egress                 = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 0
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "-1"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 0
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sg-0261752fc8d05c772" [90m-> null[0m[0m
+      [31m-[0m[0m ingress                = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 10250
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 10250
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 22
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 22
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 30000
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 32767
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 443
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 443
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 80
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 80
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m name                   = "Worker-sg-20240902100326476800000001" [90m-> null[0m[0m
+      [31m-[0m[0m name_prefix            = "Worker-sg-" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id               = "326151034032" [90m-> null[0m[0m
+      [31m-[0m[0m revoke_rules_on_delete = false [90m-> null[0m[0m
+      [31m-[0m[0m tags                   = {
+          [31m-[0m[0m "Name" = "Worker-sg-chirag"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {
+          [31m-[0m[0m "Name" = "Worker-sg-chirag"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id                 = "vpc-02e5003cab44b8494" [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_egress_rule.controller_sg_egress[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_egress_rule" "controller_sg_egress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-03fb51f1eb3158fc3" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-03fb51f1eb3158fc3" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "-1" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-05ec1a8080806756b" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-03fb51f1eb3158fc3" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_egress_rule.worker_sg_egress[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_egress_rule" "worker_sg_egress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-054931d90850438b8" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-054931d90850438b8" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "-1" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-0261752fc8d05c772" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-054931d90850438b8" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[0][0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "controller_sg_ingress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-078193b1ed111e936" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 6443 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-078193b1ed111e936" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-05ec1a8080806756b" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-078193b1ed111e936" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 6443 [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[1][0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "controller_sg_ingress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-0ef2d2acf4b9bbcfd" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 2379 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-0ef2d2acf4b9bbcfd" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-05ec1a8080806756b" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-0ef2d2acf4b9bbcfd" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 2380 [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[2][0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "controller_sg_ingress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-0ee90e2d56d467a48" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 10250 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-0ee90e2d56d467a48" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-05ec1a8080806756b" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-0ee90e2d56d467a48" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 10250 [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[3][0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "controller_sg_ingress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-0f7057547a7326817" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 10257 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-0f7057547a7326817" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-05ec1a8080806756b" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-0f7057547a7326817" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 10257 [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[4][0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "controller_sg_ingress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-0207eefdb72ec7256" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 10259 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-0207eefdb72ec7256" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-05ec1a8080806756b" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-0207eefdb72ec7256" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 10259 [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[5][0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "controller_sg_ingress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-0bff8266b4050dcd1" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 8080 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-0bff8266b4050dcd1" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-05ec1a8080806756b" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-0bff8266b4050dcd1" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 8080 [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[6][0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "controller_sg_ingress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-077096e2da1d32752" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 22 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-077096e2da1d32752" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-05ec1a8080806756b" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-077096e2da1d32752" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 22 [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[7][0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "controller_sg_ingress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-09ed97d50c7eb530e" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 443 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-09ed97d50c7eb530e" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-05ec1a8080806756b" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-09ed97d50c7eb530e" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 443 [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[8][0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "controller_sg_ingress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-0410e1c3c8a366bbe" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 80 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-0410e1c3c8a366bbe" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-05ec1a8080806756b" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-0410e1c3c8a366bbe" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 80 [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[0][0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "worker_sg_ingress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-00cd35f53770b2625" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 10250 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-00cd35f53770b2625" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-0261752fc8d05c772" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-00cd35f53770b2625" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 10250 [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[1][0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "worker_sg_ingress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-0ec1fdfbe02bedc9b" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 30000 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-0ec1fdfbe02bedc9b" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-0261752fc8d05c772" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-0ec1fdfbe02bedc9b" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 32767 [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[2][0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "worker_sg_ingress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-08a5e720774e8fa19" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 22 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-08a5e720774e8fa19" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-0261752fc8d05c772" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-08a5e720774e8fa19" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 22 [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[3][0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "worker_sg_ingress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-0843100184fe7b18f" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 443 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-0843100184fe7b18f" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-0261752fc8d05c772" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-0843100184fe7b18f" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 443 [90m-> null[0m[0m
+    }
+
+[1m  # module.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[4][0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "worker_sg_ingress" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:326151034032:security-group-rule/sgr-0bdd60b81ef56f5f5" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 80 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-0bdd60b81ef56f5f5" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-0261752fc8d05c772" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-0bdd60b81ef56f5f5" [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {} [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 80 [90m-> null[0m[0m
+    }
+
+[1m  # module.vpc.aws_internet_gateway.my_igw[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_internet_gateway" "my_igw" {
+      [31m-[0m[0m arn      = "arn:aws:ec2:ap-southeast-2:326151034032:internet-gateway/igw-0ea9ef54738eb5271" [90m-> null[0m[0m
+      [31m-[0m[0m id       = "igw-0ea9ef54738eb5271" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id = "326151034032" [90m-> null[0m[0m
+      [31m-[0m[0m tags     = {
+          [31m-[0m[0m "Name" = "MyIGW-chirag"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all = {
+          [31m-[0m[0m "Name" = "MyIGW-chirag"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id   = "vpc-02e5003cab44b8494" [90m-> null[0m[0m
+    }
+
+[1m  # module.vpc.aws_route_table.public_rt[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_route_table" "public_rt" {
+      [31m-[0m[0m arn              = "arn:aws:ec2:ap-southeast-2:326151034032:route-table/rtb-0f862865ba2bce9ba" [90m-> null[0m[0m
+      [31m-[0m[0m id               = "rtb-0f862865ba2bce9ba" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id         = "326151034032" [90m-> null[0m[0m
+      [31m-[0m[0m propagating_vgws = [] [90m-> null[0m[0m
+      [31m-[0m[0m route            = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "0.0.0.0/0"
+              [31m-[0m[0m gateway_id                 = "igw-0ea9ef54738eb5271"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags             = {
+          [31m-[0m[0m "Name" = "Pub-RT-chirag"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all         = {
+          [31m-[0m[0m "Name" = "Pub-RT-chirag"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id           = "vpc-02e5003cab44b8494" [90m-> null[0m[0m
+    }
+
+[1m  # module.vpc.aws_vpc.my_vpc[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "aws_vpc" "my_vpc" {
+      [31m-[0m[0m arn                                  = "arn:aws:ec2:ap-southeast-2:326151034032:vpc/vpc-02e5003cab44b8494" [90m-> null[0m[0m
+      [31m-[0m[0m assign_generated_ipv6_cidr_block     = false [90m-> null[0m[0m
+      [31m-[0m[0m cidr_block                           = "10.0.0.0/16" [90m-> null[0m[0m
+      [31m-[0m[0m default_network_acl_id               = "acl-0cef3a5c2fc312d0d" [90m-> null[0m[0m
+      [31m-[0m[0m default_route_table_id               = "rtb-038f564f1a96f8410" [90m-> null[0m[0m
+      [31m-[0m[0m default_security_group_id            = "sg-0fb2f430a4c6e503a" [90m-> null[0m[0m
+      [31m-[0m[0m dhcp_options_id                      = "dopt-026980a2ceebed64d" [90m-> null[0m[0m
+      [31m-[0m[0m enable_dns_hostnames                 = false [90m-> null[0m[0m
+      [31m-[0m[0m enable_dns_support                   = true [90m-> null[0m[0m
+      [31m-[0m[0m enable_network_address_usage_metrics = false [90m-> null[0m[0m
+      [31m-[0m[0m id                                   = "vpc-02e5003cab44b8494" [90m-> null[0m[0m
+      [31m-[0m[0m instance_tenancy                     = "default" [90m-> null[0m[0m
+      [31m-[0m[0m ipv6_netmask_length                  = 0 [90m-> null[0m[0m
+      [31m-[0m[0m main_route_table_id                  = "rtb-038f564f1a96f8410" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id                             = "326151034032" [90m-> null[0m[0m
+      [31m-[0m[0m tags                                 = {
+          [31m-[0m[0m "Name" = "MyVPC-chirag"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all                             = {
+          [31m-[0m[0m "Name" = "MyVPC-chirag"
+        } [90m-> null[0m[0m
+        [90m# (4 unchanged attributes hidden)[0m[0m
+    }
+
+[1mPlan:[0m 0 to add, 0 to change, 24 to destroy.
+[0m
+Changes to Outputs:
+  [31m-[0m[0m s3_bucket_arn = "arn:aws:s3:::fruitables-1.0.0-chirag" [90m-> null[0m[0m
+[0m[1m
+Do you really want to destroy all resources?[0m
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  [1mEnter a value:[0m [0m
+[0m[1mmodule.s3.aws_s3_bucket_versioning.bucket_versioning: Destroying... [id=fruitables-1.0.0-chirag][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[8]: Destroying... [id=sgr-0410e1c3c8a366bbe][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[2]: Destroying... [id=sgr-08a5e720774e8fa19][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[1]: Destroying... [id=sgr-0ec1fdfbe02bedc9b][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[3]: Destroying... [id=sgr-0f7057547a7326817][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_egress_rule.controller_sg_egress: Destroying... [id=sgr-03fb51f1eb3158fc3][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[0]: Destroying... [id=sgr-078193b1ed111e936][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[1]: Destroying... [id=sgr-0ef2d2acf4b9bbcfd][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[0]: Destroying... [id=sgr-00cd35f53770b2625][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[7]: Destroying... [id=sgr-09ed97d50c7eb530e][0m[0m
+[0m[1mmodule.s3.aws_s3_bucket_versioning.bucket_versioning: Destruction complete after 1s[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[2]: Destroying... [id=sgr-0ee90e2d56d467a48][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[1]: Destruction complete after 1s[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[1]: Destruction complete after 1s[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[4]: Destroying... [id=sgr-0bdd60b81ef56f5f5][0m[0m
+[0m[1mmodule.vpc.aws_route_table.public_rt: Destroying... [id=rtb-0f862865ba2bce9ba][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[8]: Destruction complete after 1s[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_egress_rule.worker_sg_egress: Destroying... [id=sgr-054931d90850438b8][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_egress_rule.controller_sg_egress: Destruction complete after 1s[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[5]: Destroying... [id=sgr-0bff8266b4050dcd1][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[0]: Destruction complete after 1s[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[4]: Destroying... [id=sgr-0207eefdb72ec7256][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[0]: Destruction complete after 1s[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[6]: Destroying... [id=sgr-077096e2da1d32752][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[2]: Destruction complete after 1s[0m
+[0m[1mmodule.s3.aws_s3_bucket_public_access_block.app_bucket_public_access: Destroying... [id=fruitables-1.0.0-chirag][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[7]: Destruction complete after 1s[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[3]: Destroying... [id=sgr-0843100184fe7b18f][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[3]: Destruction complete after 1s[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[4]: Destruction complete after 0s[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[2]: Destruction complete after 0s[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_egress_rule.worker_sg_egress: Destruction complete after 0s[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[5]: Destruction complete after 0s[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[4]: Destruction complete after 0s[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.controller_sg_ingress[6]: Destruction complete after 0s[0m
+[0m[1mmodule.security_group.aws_security_group.controller_sg: Destroying... [id=sg-05ec1a8080806756b][0m[0m
+[0m[1mmodule.security_group.aws_vpc_security_group_ingress_rule.worker_sg_ingress[3]: Destruction complete after 0s[0m
+[0m[1mmodule.security_group.aws_security_group.worker_sg: Destroying... [id=sg-0261752fc8d05c772][0m[0m
+[0m[1mmodule.s3.aws_s3_bucket_public_access_block.app_bucket_public_access: Destruction complete after 1s[0m
+[0m[1mmodule.s3.aws_s3_bucket.app_bucket: Destroying... [id=fruitables-1.0.0-chirag][0m[0m
+[0m[1mmodule.vpc.aws_route_table.public_rt: Destruction complete after 1s[0m
+[0m[1mmodule.vpc.aws_internet_gateway.my_igw: Destroying... [id=igw-0ea9ef54738eb5271][0m[0m
+[0m[1mmodule.s3.aws_s3_bucket.app_bucket: Destruction complete after 0s[0m
+[0m[1mmodule.security_group.aws_security_group.controller_sg: Destruction complete after 1s[0m
+[0m[1mmodule.security_group.aws_security_group.worker_sg: Destruction complete after 1s[0m
+[0m[1mmodule.vpc.aws_internet_gateway.my_igw: Destruction complete after 1s[0m
+[0m[1mmodule.vpc.aws_vpc.my_vpc: Destroying... [id=vpc-02e5003cab44b8494][0m[0m
+[0m[1mmodule.vpc.aws_vpc.my_vpc: Destruction complete after 1s[0m
+[0m[1m[32m
+Destroy complete! Resources: 24 destroyed.
+[0m

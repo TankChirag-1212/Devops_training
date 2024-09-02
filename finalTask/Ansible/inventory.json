@@ -1,0 +1,308 @@
+{
+    "_meta": {
+        "hostvars": {
+            "13.201.125.61": {
+                "ami_launch_index": 0,
+                "architecture": "x86_64",
+                "block_device_mappings": [
+                    {
+                        "device_name": "/dev/sda1",
+                        "ebs": {
+                            "attach_time": "2024-09-01T13:51:31+00:00",
+                            "delete_on_termination": true,
+                            "status": "attached",
+                            "volume_id": "vol-0760249accfb952f1"
+                        }
+                    }
+                ],
+                "boot_mode": "uefi-preferred",
+                "capacity_reservation_specification": {
+                    "capacity_reservation_preference": "open"
+                },
+                "client_token": "terraform-20240901135130154200000005",
+                "cpu_options": {
+                    "core_count": 2,
+                    "threads_per_core": 1
+                },
+                "current_instance_boot_mode": "legacy-bios",
+                "ebs_optimized": false,
+                "ena_support": true,
+                "enclave_options": {
+                    "enabled": false
+                },
+                "hibernation_options": {
+                    "configured": false
+                },
+                "hypervisor": "xen",
+                "iam_instance_profile": {
+                    "arn": "arn:aws:iam::021891610828:instance-profile/ec2_instance_profile",
+                    "id": "AIPAQKGGXPDGLPET6ITFG"
+                },
+                "image_id": "ami-0522ab6e1ddcc7055",
+                "instance_id": "i-05fad15f4df0de195",
+                "instance_type": "t2.medium",
+                "key_name": "aws-ansible-key",
+                "launch_time": "2024-09-01T13:51:30+00:00",
+                "maintenance_options": {
+                    "auto_recovery": "default"
+                },
+                "metadata_options": {
+                    "http_endpoint": "enabled",
+                    "http_protocol_ipv6": "disabled",
+                    "http_put_response_hop_limit": 2,
+                    "http_tokens": "required",
+                    "instance_metadata_tags": "disabled",
+                    "state": "applied"
+                },
+                "monitoring": {
+                    "state": "disabled"
+                },
+                "network_interfaces": [
+                    {
+                        "association": {
+                            "ip_owner_id": "amazon",
+                            "public_dns_name": "",
+                            "public_ip": "13.201.125.61"
+                        },
+                        "attachment": {
+                            "attach_time": "2024-09-01T13:51:30+00:00",
+                            "attachment_id": "eni-attach-0a7a6acd30acab5a3",
+                            "delete_on_termination": true,
+                            "device_index": 0,
+                            "network_card_index": 0,
+                            "status": "attached"
+                        },
+                        "description": "",
+                        "groups": [
+                            {
+                                "group_id": "sg-09b10f63fea6bd65f",
+                                "group_name": "Controller-sg-20240901135119226200000002"
+                            }
+                        ],
+                        "interface_type": "interface",
+                        "ipv6_addresses": [],
+                        "mac_address": "02:4a:90:b5:3c:cf",
+                        "network_interface_id": "eni-063906fb3ba09dda7",
+                        "owner_id": "021891610828",
+                        "private_ip_address": "10.0.1.179",
+                        "private_ip_addresses": [
+                            {
+                                "association": {
+                                    "ip_owner_id": "amazon",
+                                    "public_dns_name": "",
+                                    "public_ip": "13.201.125.61"
+                                },
+                                "primary": true,
+                                "private_ip_address": "10.0.1.179"
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "status": "in-use",
+                        "subnet_id": "subnet-0074abb6537bc072e",
+                        "vpc_id": "vpc-00233c9a8220f3fc6"
+                    }
+                ],
+                "owner_id": "021891610828",
+                "placement": {
+                    "availability_zone": "ap-south-1a",
+                    "group_name": "",
+                    "region": "ap-south-1",
+                    "tenancy": "default"
+                },
+                "platform_details": "Linux/UNIX",
+                "private_dns_name": "ip-10-0-1-179.ap-south-1.compute.internal",
+                "private_dns_name_options": {
+                    "enable_resource_name_dns_a_record": false,
+                    "enable_resource_name_dns_aaaa_record": false,
+                    "hostname_type": "ip-name"
+                },
+                "private_ip_address": "10.0.1.179",
+                "product_codes": [],
+                "public_dns_name": "",
+                "public_ip_address": "13.201.125.61",
+                "requester_id": "",
+                "reservation_id": "r-0192e6ce1ef173732",
+                "root_device_name": "/dev/sda1",
+                "root_device_type": "ebs",
+                "security_groups": [
+                    {
+                        "group_id": "sg-09b10f63fea6bd65f",
+                        "group_name": "Controller-sg-20240901135119226200000002"
+                    }
+                ],
+                "source_dest_check": true,
+                "state": {
+                    "code": 16,
+                    "name": "running"
+                },
+                "state_transition_reason": "",
+                "subnet_id": "subnet-0074abb6537bc072e",
+                "tags": {
+                    "Author": "Chirag",
+                    "Name": "Controller-Node-chirag"
+                },
+                "usage_operation": "RunInstances",
+                "usage_operation_update_time": "2024-09-01T13:51:30+00:00",
+                "virtualization_type": "hvm",
+                "vpc_id": "vpc-00233c9a8220f3fc6"
+            },
+            "13.232.58.70": {
+                "ami_launch_index": 0,
+                "architecture": "x86_64",
+                "block_device_mappings": [
+                    {
+                        "device_name": "/dev/sda1",
+                        "ebs": {
+                            "attach_time": "2024-09-01T13:51:31+00:00",
+                            "delete_on_termination": true,
+                            "status": "attached",
+                            "volume_id": "vol-05eb71026c04b40bb"
+                        }
+                    }
+                ],
+                "boot_mode": "uefi-preferred",
+                "capacity_reservation_specification": {
+                    "capacity_reservation_preference": "open"
+                },
+                "client_token": "terraform-20240901135130148400000004",
+                "cpu_options": {
+                    "core_count": 1,
+                    "threads_per_core": 1
+                },
+                "current_instance_boot_mode": "legacy-bios",
+                "ebs_optimized": false,
+                "ena_support": true,
+                "enclave_options": {
+                    "enabled": false
+                },
+                "hibernation_options": {
+                    "configured": false
+                },
+                "hypervisor": "xen",
+                "iam_instance_profile": {
+                    "arn": "arn:aws:iam::021891610828:instance-profile/ec2_instance_profile",
+                    "id": "AIPAQKGGXPDGLPET6ITFG"
+                },
+                "image_id": "ami-0522ab6e1ddcc7055",
+                "instance_id": "i-0a647e8e394599e32",
+                "instance_type": "t2.micro",
+                "key_name": "aws-ansible-key",
+                "launch_time": "2024-09-01T13:51:30+00:00",
+                "maintenance_options": {
+                    "auto_recovery": "default"
+                },
+                "metadata_options": {
+                    "http_endpoint": "enabled",
+                    "http_protocol_ipv6": "disabled",
+                    "http_put_response_hop_limit": 2,
+                    "http_tokens": "required",
+                    "instance_metadata_tags": "disabled",
+                    "state": "applied"
+                },
+                "monitoring": {
+                    "state": "disabled"
+                },
+                "network_interfaces": [
+                    {
+                        "association": {
+                            "ip_owner_id": "amazon",
+                            "public_dns_name": "",
+                            "public_ip": "13.232.58.70"
+                        },
+                        "attachment": {
+                            "attach_time": "2024-09-01T13:51:30+00:00",
+                            "attachment_id": "eni-attach-0415b2462066bacd4",
+                            "delete_on_termination": true,
+                            "device_index": 0,
+                            "network_card_index": 0,
+                            "status": "attached"
+                        },
+                        "description": "",
+                        "groups": [
+                            {
+                                "group_id": "sg-04eff90f95991b1b7",
+                                "group_name": "Worker-sg-20240901135119225800000001"
+                            }
+                        ],
+                        "interface_type": "interface",
+                        "ipv6_addresses": [],
+                        "mac_address": "02:27:b7:af:4c:83",
+                        "network_interface_id": "eni-0abd1e150b0bd3112",
+                        "owner_id": "021891610828",
+                        "private_ip_address": "10.0.1.224",
+                        "private_ip_addresses": [
+                            {
+                                "association": {
+                                    "ip_owner_id": "amazon",
+                                    "public_dns_name": "",
+                                    "public_ip": "13.232.58.70"
+                                },
+                                "primary": true,
+                                "private_ip_address": "10.0.1.224"
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "status": "in-use",
+                        "subnet_id": "subnet-0074abb6537bc072e",
+                        "vpc_id": "vpc-00233c9a8220f3fc6"
+                    }
+                ],
+                "owner_id": "021891610828",
+                "placement": {
+                    "availability_zone": "ap-south-1a",
+                    "group_name": "",
+                    "region": "ap-south-1",
+                    "tenancy": "default"
+                },
+                "platform_details": "Linux/UNIX",
+                "private_dns_name": "ip-10-0-1-224.ap-south-1.compute.internal",
+                "private_dns_name_options": {
+                    "enable_resource_name_dns_a_record": false,
+                    "enable_resource_name_dns_aaaa_record": false,
+                    "hostname_type": "ip-name"
+                },
+                "private_ip_address": "10.0.1.224",
+                "product_codes": [],
+                "public_dns_name": "",
+                "public_ip_address": "13.232.58.70",
+                "requester_id": "",
+                "reservation_id": "r-0dd4b453f8b77edba",
+                "root_device_name": "/dev/sda1",
+                "root_device_type": "ebs",
+                "security_groups": [
+                    {
+                        "group_id": "sg-04eff90f95991b1b7",
+                        "group_name": "Worker-sg-20240901135119225800000001"
+                    }
+                ],
+                "source_dest_check": true,
+                "state": {
+                    "code": 16,
+                    "name": "running"
+                },
+                "state_transition_reason": "",
+                "subnet_id": "subnet-0074abb6537bc072e",
+                "tags": {
+                    "Author": "Chirag",
+                    "Name": "Worker-Node-chirag"
+                },
+                "usage_operation": "RunInstances",
+                "usage_operation_update_time": "2024-09-01T13:51:30+00:00",
+                "virtualization_type": "hvm",
+                "vpc_id": "vpc-00233c9a8220f3fc6"
+            }
+        }
+    },
+    "all": {
+        "children": [
+            "aws_ec2",
+            "ungrouped"
+        ]
+    },
+    "aws_ec2": {
+        "hosts": [
+            "13.201.125.61",
+            "13.232.58.70"
+        ]
+    }
+}
