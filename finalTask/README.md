@@ -114,17 +114,17 @@ module "s3" {
 > **terraform init =>**<br>
 ![alt text](img/image2.png)
 
-> **terraform plan =>** [plan.log](Terraform/logs/plan.log)<br>
+> **terraform plan =>** [plan.log](Terraform/plan.log)<br>
 ![alt text](img/image3.png)
 
-> **terraform apply =>** [apply.log](Terraform/logs/apply.log)<br>
+> **terraform apply =>** [apply.log](Terraform/apply.log)<br>
 ![alt text](img/image4.png)
 
 ### 5. Containerize the Application with Docker (60 Minutes)
 - **Dockerfile:** Write a Dockerfile for the e-commerce application.
 ```Dockerfile
 # Use an official NGINX image as a base image
-FROM nginx:alpine
+FROM nginx:latest
 
 # Set the working directory inside the container
 WORKDIR /usr/share/nginx/html
@@ -170,14 +170,94 @@ CMD ["nginx", "-g", "daemon off;"]
 
 - **Configure Pipeline:**
   - Create a Groovy pipeline script in Jenkins for CI/CD.
+  - Integrate the jenkins with kubernetes using below steps
+    - Go to `Manage Jenkins > Clouds > New Cloud` and create the new cloud with kubernetes<br>
+    ![alt text](img/image26.png)
+    - Add kubeconfig file by creating new credentials in jenkins and same way create the new credentials for dockerhub login
+    ![alt text](img/image27.png)
+    ![alt text](img/image29.png)
+
+    - Test the connection whether jenkins can connect with kubernetes or not
+    ![alt text](img/image28.png)
+
   - The pipeline should include stages for:
     - **Source Code Checkout:** Pull code from the Git repository.
     - **Build Docker Image:** Build Docker images from the Dockerfile.
     - **Push Docker Image:** Push Docker image to Docker registry.
     - **Deploy to Kubernetes:** Use Helm charts to deploy the Docker image to Kubernetes.
+```bash
+pipeline {
+    agent any
+
+    environment {
+        // Define environment variables
+        DOCKER_REGISTRY = 'chirag1212'
+        DOCKER_IMAGE_NAME = 'final-task'
+        DOCKER_CREDENTIALS = '<docker-credentials-id>'
+        KUBERNETES_CREDENTIALS = '<kubernetes-credentials-id>'
+        HELM_RELEASE_NAME = 'fruitables'
+        HELM_CHART_PATH = './helmChart'
+        HELM_PACKAGE_NAME = 'fruitables-1.0.0.tgz'
+    }
+    stages {
+        stage('Source Code Checkout') {
+            steps {
+                // Pull code from the Git repository
+                git branch: 'master', url: 'https://github.com/TankChirag-1212/Fruitables-Website.git'
+            }
+        }
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    // Build Docker image from Dockerfile
+                    def dockerImage = docker.build("${DOCKER_REGISTRY}/${DOCKER_IMAGE_NAME}:v3.0")
+                }
+            }
+        }
+        stage('Push Docker Image') {
+            steps {
+                script {
+                    // Push Docker image to Docker registry
+                    docker.withRegistry('', DOCKER_CREDENTIALS) {
+                        docker.image("${DOCKER_REGISTRY}/${DOCKER_IMAGE_NAME}:v3.0").push('v3.0')
+                    }
+                }
+            }
+        }
+        stage('Deploy to Kubernetes') {
+            steps {
+                script {
+                    // Deploy Docker image to Kubernetes using Helm
+                    withKubeConfig([credentialsId: KUBERNETES_CREDENTIALS]) {
+                        sh """
+                        helm package ${HELM_CHART_PATH}
+                        helm upgrade --install ${HELM_RELEASE_NAME} ./${HELM_PACKAGE_NAME} --set image.repository="${DOCKER_REGISTRY}/${DOCKER_IMAGE_NAME}" --set image.tag=v3.0
+                        """
+                    }
+                }
+            }
+        }
+    }   
+    post {
+        always {
+            // Clean up any resources
+            cleanWs()
+        }
+    }
+}
+```
+![alt text](img/image31.png)
 
 ### 8. Deploy the Application with Helm (60 Minutes)
-- **Create Helm Charts:** Define Helm charts for the e-commerce application deployment, including configuration to fetch static
+- **Create Helm Charts:** Define Helm charts for the e-commerce application deployment, including configuration to fetch static files from the S3 bucket.
+- **Install Helm Charts:** Deploy the application to Kubernetes using Helm charts.
+![alt text](img/image25.png)
+- **Verify Deployment:** Ensure the application is running correctly and fetching static files from S3.
+![alt text](img/image30.png)
 
-> **terraform destroy =>** [destroy.log](Terraform/logs/destroy.log) <br>
+### 9. Clean Up Resources (30 Minutes)
+    
+- **Terminate Resources:** Use Terraform to destroy all provisioned infrastructure by running terraform destroy.
+
+> **terraform destroy =>** <br>
 ![alt text](img/image5.png)

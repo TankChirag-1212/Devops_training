@@ -34,3 +34,8 @@ variable "instance_name" {
     description = "variable for instance name"
     type = string
 }
+
+# variable for instance profile name
+variable "ec2_instance_profile_name" {
+  type = string
+}

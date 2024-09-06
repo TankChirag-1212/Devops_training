@@ -1,7 +1,8 @@
-helm_version: "3.11.1"
-helm_chart_name: "mychart"
+helm_version: "3.15.4"
 helm_chart_repo: "https://charts.bitnami.com/bitnami"
-helm_chart_version: "1.0.0"
 release_name: "myrelease"
 namespace: "default"
+helm_package_url: "https://get.helm.sh/helm-v3.15.4-linux-amd64.tar.gz"
+jenkins_key_url: "https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key"
+calico_url: "https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/calico.yaml"
  

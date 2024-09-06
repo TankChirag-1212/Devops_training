@@ -5,7 +5,7 @@ filters:
   instance-state-name:
     - running
   tag:Name:
-    - Controller-Node-chirag
+    - Master-Node-chirag
     - Worker-Node-chirag
   tag:Node: 
     - Worker

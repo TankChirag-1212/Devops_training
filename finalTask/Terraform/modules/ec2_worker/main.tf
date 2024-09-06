@@ -1,7 +1,8 @@
 # Create EC2 instance
 resource "aws_instance" "webserver" {
   ami                         = var.ami
-  instance_type               = var.instance_type
+  instance_type               = var.instance_type  
+  iam_instance_profile        = var.ec2_instance_profile_name
   associate_public_ip_address = true
   subnet_id                   = var.public_subnet_id
   vpc_security_group_ids      = [var.security_group_id]

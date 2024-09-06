@@ -43,6 +43,10 @@ variable "controller_ingress_rules" {
   {
     from_port   = 80
     to_port     = 80
+  },
+  {
+    from_port   = 30000
+    to_port     = 32767
   } ]
 }
 

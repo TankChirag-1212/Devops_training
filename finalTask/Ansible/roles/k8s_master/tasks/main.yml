@@ -22,7 +22,7 @@
 
 - name: Deploy Calico network plugin
   ansible.builtin.command:
-    cmd: kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/calico.yaml
+    cmd: kubectl apply -f {{ calico_url }}
   environment:
     KUBECONFIG: "{{ ansible_env.HOME }}/.kube/config"
 
@@ -40,42 +40,84 @@
     msg: "{{ kubeadm_join_cmd }}"
 
 
-# installation of helm chart in master node
-- name: Download Helm binary
-  get_url:
-    url: "https://get.helm.sh/helm-v{{ helm_version }}-linux-amd64.tar.gz"
-    dest: "/tmp/helm.tar.gz"
+# installation of helm chart in master node 
+
+- name: Download Helm using curl
+  command: curl -L {{ helm_package_url }} -o /tmp/helm.tar.gz
 
 - name: Extract Helm binary
   unarchive:
     src: "/tmp/helm.tar.gz"
-    dest: "/usr/local/bin/"
+    dest: "/tmp"
+    remote_src: yes
+
+- name: Move Helm binary to /usr/local/bin
+  copy:
+    src: "/tmp/linux-amd64/helm" 
+    dest: "/usr/local/bin/helm"
+    mode: '0755'
     remote_src: yes
 
 - name: Verify Helm installation
-  command: helm version --short
+  command: helm version
   register: helm_version_output
   changed_when: false
 
 - name: Add Helm repository
-  command: helm repo add myrepo {{ helm_chart_repo }}
+  shell: "helm repo add myrepo {{ helm_chart_repo }}"
   register: helm_repo_add_output
   changed_when: "'already exists' not in helm_repo_add_output.stderr"
 
 - name: Update Helm repositories
   command: helm repo update
 
-- name: Install Helm chart
-  command: helm upgrade --install {{ release_name }} myrepo/{{ helm_chart_name }} --version {{ helm_chart_version }} --namespace {{ namespace }}
-  register: helm_install_output
-  changed_when: "'already exists' not in helm_install_output.stderr"
 
-- name: Check Helm release status
-  command: helm status {{ release_name }} --namespace {{ namespace }}
-  register: helm_status_output
+# Installation of Jenkins in master node
+
+- name: Install Java (required for Jenkins)
+  ansible.builtin.package:
+    name: openjdk-11-jdk
+    state: present
+
+- name: Download Jenkins GPG key using curl
+  ansible.builtin.command:
+    cmd: >
+      curl -fsSL {{ jenkins_key_url }} -o /usr/share/keyrings/jenkins-keyring.asc
+  args:
+    creates: /usr/share/keyrings/jenkins-keyring.asc
+
+- name: Add Jenkins repository
+  ansible.builtin.apt_repository:
+    repo: "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/"
+    state: present
+    filename: "jenkins"
+
+- name: Update apt cache
+  ansible.builtin.apt:
+    update_cache: yes
+
+- name: Install Jenkins
+  ansible.builtin.apt:
+    name: jenkins
+    state: present
+
+- name: Start Jenkins service
+  ansible.builtin.systemd:
+    name: jenkins
+    enabled: yes
+    state: started
+
+- name: Wait for Jenkins to start
+  ansible.builtin.wait_for:
+    port: 8080
+    delay: 30
+    state: started
+
+- name: Get Jenkins initial admin password
+  ansible.builtin.command: cat /var/lib/jenkins/secrets/initialAdminPassword
+  register: jenkins_admin_password
   changed_when: false
 
-- name: Display Helm release status
-  debug:
-    msg: "{{ helm_status_output.stdout }}"
- 
+- name: Display Jenkins initial admin password
+  ansible.builtin.debug:
+    msg: "Jenkins initial admin password: {{ jenkins_admin_password.stdout }}"

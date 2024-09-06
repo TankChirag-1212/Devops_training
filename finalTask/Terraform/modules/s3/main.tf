@@ -33,8 +33,7 @@ resource "aws_s3_bucket_policy" "s3_bucket_policy" {
       {
         Effect = "Allow"
         Principal = {
-          # AWS = var.ec2_iam_role_arn
-          AWS = "arn:aws:iam::326151034032:user/lab_user"
+          AWS = var.ec2_iam_role_arn
         }
         Action = [
           "s3:DeleteObject",
